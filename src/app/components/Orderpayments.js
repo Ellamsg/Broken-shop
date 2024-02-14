@@ -13,8 +13,6 @@ const Orderpayments = () => {
 
   const session = useSession();
  
-
-
   const cart = useCartStore((state) => state.cart);
   const cartTotal = useCartStore((state) => state.cartTotal);
   const clearCart = useCartStore((state) => state.clearCart);
@@ -62,7 +60,7 @@ const Orderpayments = () => {
           display_name: "Cart Items",
           variable_name: "cart_items",
           value: cart
-            .map((product) => `${product.quantity} ${product.name} size:  ${product.sizes} `)
+            .map((product) => `${product.quantity} ${product.name} size:  ${product.size}, `)
             .join(", "),
         },
         {
