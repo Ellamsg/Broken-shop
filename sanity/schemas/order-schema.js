@@ -30,7 +30,12 @@ const order = {
         type: "number",
         validation: (Rule) => Rule.required().min(0),
       },
-
+      {
+        name: "sizes",
+        title: "Sizes",
+        type: "string",
+        validation: (Rule) => Rule.required().min(0),
+      },
      
       {
         name: "price",
