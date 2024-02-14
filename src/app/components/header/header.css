@@ -74,5 +74,10 @@
     font-weight: normal;
   }
   
- 
+  .texts {
+    font-size: clamp(38px, 20vw, 250px);
+}
   
+.clamp-img {
+  width: clamp(38px, 20vw, 250px);
+}

@@ -92,6 +92,13 @@ div.scrolling {
   }
 }
 
+@media (max-width:350px) {
+ 
+  .clamps{
+    height: 150px;
+    width: 100%;
+  }
+}
 
 .cart-items{
   animation: fadeIn 0.5s ease-in-out;

@@ -31,7 +31,7 @@ const MOBILE_NAV_ITEMS = [
   {
     id: 3,
     navTitle: "About",
-    link:"/paystack"
+    link:"/about"
   },
   {
     id: 3,

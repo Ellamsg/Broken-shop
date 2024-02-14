@@ -22,7 +22,7 @@ const Trending = ({ product,imageStyle }) => {
             />
           </div>
 
-          <div className=" flex gap-4 uppercase">
+          <div className="md:text-[16px] text-[13px] flex gap-4 uppercase">
             <p>{product?.name}</p>
 
             <p>NGN{product?.price}</p>

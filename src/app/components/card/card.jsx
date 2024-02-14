@@ -16,7 +16,7 @@ const Card = ({ product }) => {
             />
           </div>
 
-          <div className=" flex justify-between gap-2 uppercase">
+          <div className=" md:text-[16px] text-[13px] flex justify-between gap-2 uppercase">
             <p>{product?.name}</p>
 
             <p>NGN{product?.price}</p>

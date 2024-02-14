@@ -70,16 +70,16 @@ const Homepage = () => {
   return (
     <div className="">
       <div className="border-b-2 justify-between  mb-4 lg:mx-[70px] mx-3 items-center lg:text-[16rem] flex  text-[4.5rem]  leading-tight border-white">
-        <p>B</p>
-        <p>R</p>
-        <img className=" size-5 lg:size-20" src="/images/heart2.png" />
-        <p>K</p>
-        <p>E</p>
-        <p>N</p>
+        <p className="texts">B</p>
+        <p className="texts">R</p>
+        <img className=" clamp-img" src="/images/heart2.png" />
+        <p className="texts">K</p>
+        <p className="texts">E</p>
+        <p className="texts">N</p>
       </div>
 
       <div className="space">
-        <div className="grid grid-cols-2 gap-3 ">
+        <div className="grid grid-cols-2 gap-3  ">
           <div className="grid md:grid-cols-2 gap-3 ">
             <video
               className="md:h-[300px] h-[324px] object-cover w-[100%]"
@@ -104,7 +104,7 @@ const Homepage = () => {
             />
           </div>
 
-          <div className="grid md:grid-cols-4 ">
+          <div className="grid md:grid-cols-4  ">
             <video
               className=" w-[100%] md:h-auto h-[250px] object-cover"
               poster="/images/mock14.jpg"
@@ -117,7 +117,7 @@ const Homepage = () => {
             />
 
             <div className=" flex justify-center md:p-0 p-2 items-center md:items-end">
-              <div className="lg:size-[150px] md:size-[100px] size-[150px] border-white border-2  flex items-center  justify-center rounded-[100%]">
+              <div className="lg:size-[150px] md:size-[100px] clamps  size-[150px]  border-white border-2  flex items-center  justify-center rounded-[100%]">
                 <Link href="/allproducts">
                   {" "}
                   <p className="discover">discover</p>

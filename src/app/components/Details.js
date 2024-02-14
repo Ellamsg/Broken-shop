@@ -12,7 +12,6 @@ const Details = () => {
   const session = useSession();
 
   const router = useRouter();
-
   const [pop, setPopUp] = useState("");
   const [sizes, setSizes] = useState("");
   const cart = useCartStore((state) => state.cart);
@@ -260,27 +259,41 @@ const Details = () => {
           </div>
 
           <div className="select pt-5 md:pt-0 ">
+        
             <p className="text-end text-3xl py-0 md:py-6">
               CHECK OUT ALL NEW COLLECTIONS
             </p>
+         
+           
             <div className="border-black collections border-t-2">
+              <Link href="/allproducts/caps">
               <p>CAP/SNAP BACKS</p>
+              </Link>
+        
               <img src="/icons/dark-arrow.png" alt="arrow"/>
             </div>
             <div className="collections">
+            <Link href="/allproducts/caps">
               <p>T-SHIRTS</p>
+              </Link>
               <img src="/icons/dark-arrow.png" alt="arrow"/>
             </div>
             <div className="collections">
+            <Link href="/allproducts/caps">
               <p>SHORTS</p>
+              </Link>
               <img src="/icons/dark-arrow.png" alt="arrow"/>
             </div>
             <div className="collections">
+            <Link href="/allproducts/caps">
               <p>HOODIES</p>
+              </Link>
               <img src="/icons/dark-arrow.png" alt="arrow"/>
             </div>
             <div className="collections">
+            <Link href="/allproducts">
               <p>ALL COLLECTIONS</p>
+              </Link>
               <img src="/icons/dark-arrow.png" alt="arrow"/>
             </div>
           </div>
