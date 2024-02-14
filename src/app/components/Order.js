@@ -31,12 +31,7 @@ export default function Order() {
           <div>
             <p>product</p>
           </div>
-          <div className="opacity-0">
-            <p>paid</p>
-          </div>
-          <div>
-            <p> Qty</p>
-          </div>
+         
           <div>
             <p>status</p>
           </div>
@@ -48,18 +43,14 @@ export default function Order() {
               key={product._id}
            >
               <div className="">
-                <div className="flex">
+                <div className="flex gap-3">
                   <img
-                    className="md:size-[200px] size-[90px]"
+                    className="md:size-[200px] size-[110px]"
                     src={product.image}
                   />
                   <div className="justify-between flex flex-col">
-                    <div>
-                      {product.paid ? (
-                        <p className="text-green">paid</p>
-                      ) : (
-                        <p className="text-red">not paid</p>
-                      )}
+                    <div className="">
+                    {product.name}
                     </div>
                     <div className=" text-start">
                       <p>QYT:{product.qty}</p>
@@ -71,9 +62,13 @@ export default function Order() {
                 </div>
 
                 
-                <div>
-                  <p className="pt-2 ">{product.name}</p>
-                </div>
+                <div className=" text-start">
+                      {product.paid ? (
+                        <p className="text-green">paid</p>
+                      ) : (
+                        <p className="text-red">not paid</p>
+                      )}
+                    </div>
               </div>
 
               <div>
