@@ -7,7 +7,7 @@ import Link from "next/link";
 const Trending = ({ product,imageStyle }) => {
   return (
     <div>
-
+{/**products */}
   
     <div className="  ">
       
