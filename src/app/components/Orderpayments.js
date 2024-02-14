@@ -72,7 +72,7 @@ const Orderpayments = () => {
         {
           display_name: "Login email",
           variable_name: "login email",
-          value: email, // Assuming 'address' is a variable representing the user's address
+          value: session?.data.user.email, // Assuming 'address' is a variable representing the user's address
         },
         {
           display_name: "Phone Number",
