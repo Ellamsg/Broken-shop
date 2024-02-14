@@ -36,48 +36,45 @@ const Register = () => {
 
   return (
     <div className="space ">
-      
       <div className="flex  flex-col items-center justify-center">
         <div className="lg:w-[50%] w-[100%] md:w-[70%]">
           <form className="flex gap-1 flex-col" onSubmit={handleSubmit}>
-          <label id="email">User</label>
+            <label id="email">User</label>
             <input
               className="login"
               type="text"
               required
               placeholder="username"
             />
-             <label id="password">Email</label>
+            <label id="password">Email</label>
             <input
               className="login"
               type="email"
               required
               placeholder="email"
             />
-             <label id="password">Password</label>
+            <label id="password">Password</label>
             <input
               className="login"
               type="password"
               required
               placeholder="password"
             />
- <div className="flex justify-center items-center" >
-        <button className="change login-btn  mt-[30px]">Register</button>
-        </div>
-           
+            <div className="flex justify-center items-center">
+              <button className="change login-btn  mt-[30px]">Register</button>
+            </div>
           </form>
           {error && "err yes"}
 
-          <div className="flex">
-          <p className="text-center py-6 uppercase">Already have an account?</p>
+          <div className="flex flex-col justify-center pb-5 ">
+            <p className="text-center py-4 ">
+              Already have an account?
+            </p>
 
-<Link className="text-center" href="/cart/login">
-   <a className="font-bold">LOGIN</a>
-  
-  </Link>
+            <Link className="text-center" href="/cart/login">
+              <p className="font-bold ">LOGIN</p>
+            </Link>
           </div>
-
-         
         </div>
       </div>
     </div>

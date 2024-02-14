@@ -1,10 +1,16 @@
 "use client";
 import { useState } from "react";
 import { useEffect } from "react";
-import { useSession } from "next-auth/react";
 import { getOrdersByEmail } from "../../../sanity/sanity-utils";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
+
+
+
 
 export default function Order() {
+
+  const router = useRouter();
   const user = useSession();
   const [orders, setOrders] = useState([]);
 
@@ -23,6 +29,11 @@ export default function Order() {
     fetchData();
   }, [user]);
 
+  if (user.status === "unauthenticated") {
+    router?.push("/cart/login");
+  }
+
+  if (user.status === "authenticated") {
   return (
     <div className="space">
       <h1 className="underline pt-4  ">Order</h1>
@@ -85,4 +96,5 @@ export default function Order() {
       </div>
     </div>
   );
+};
 }

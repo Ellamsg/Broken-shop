@@ -32,7 +32,8 @@ const Cart = () => {
 
   // Function to save cart data to local storage
 
-  if (session.status === "authenticated") {
+  if (session.status === "authenticated"){
+    
     return (
       <div className="space py-6">
         <p className="text-[16px]  underline">CART</p>
@@ -74,7 +75,7 @@ const Cart = () => {
                 </div>
 
                 <button
-                  className="  "
+                  className=" "
                   onClick={() => {
                     handleRemoveFromCart(product?._id);
                   }}
