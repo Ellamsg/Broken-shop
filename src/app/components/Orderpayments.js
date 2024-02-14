@@ -12,7 +12,8 @@ const Orderpayments = () => {
   const router = useRouter();
 
   const session = useSession();
-  const LoginEmail = session.data.user.email;
+ 
+
   const cart = useCartStore((state) => state.cart);
   const cartTotal = useCartStore((state) => state.cartTotal);
   const clearCart = useCartStore((state) => state.clearCart);
@@ -72,7 +73,7 @@ const Orderpayments = () => {
         {
           display_name: "Login email",
           variable_name: "login email",
-          value: LoginEmail, // Assuming 'address' is a variable representing the user's address
+          value: email, // Assuming 'address' is a variable representing the user's address
         },
         {
           display_name: "Phone Number",
