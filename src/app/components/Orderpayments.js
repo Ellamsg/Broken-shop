@@ -66,7 +66,7 @@ const Orderpayments = () => {
         },
         {
           display_name: "Name",
-          variable_name: "name",
+          variable_name: "name",//login
           value: name, // Assuming 'address' is a variable representing the user's address
         },
         {
