@@ -1,0 +1,78 @@
+
+  
+  
+  
+  nav .logo-container {
+    overflow-y: hidden;
+  }
+  
+  nav .logo-container h1 {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  
+  nav .menu-container {
+    overflow-y: hidden;
+  }
+  
+  nav .menu-container div {
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+  
+  nav .menu-container div:hover {
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .mobile-menu button {
+    align-self: flex-end;
+   
+    outline: none;
+    border: none;
+   
+  }
+  
+  .mobile-menu button:hover {
+    cursor: pointer;
+  }
+  
+  .mobile-menu ul {
+    list-style: none;
+   
+  }
+  
+  .mobile-menu li {
+  
+    overflow-y: hidden;
+    user-select: none;
+  }
+  
+  .mobile-menu li div {
+    
+    text-transform: capitalize;
+   
+  }
+  
+  .mobile-menu li:hover {
+    font-style: italic;
+    cursor: pointer;
+  }
+  
+ 
+  .mobile-menu h5 {
+    font-weight: normal;
+  }
+  
+ 
+  

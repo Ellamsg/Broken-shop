@@ -1,0 +1,22 @@
+.photo-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .product {
+    max-width: 100%; /* Ensures each photo doesn't exceed its original size */
+  }
+  
+  /* You can customize styles for each photo or use inline styles */
+  .product1 {
+    /* Custom styles for photo 1 */
+    height: 10px;
+  }
+  
+  .product2 {
+    /* Custom styles for photo 2 */
+    height: 510px;
+  }
+  
+  /* Add styles for other photos as needed */
+  
