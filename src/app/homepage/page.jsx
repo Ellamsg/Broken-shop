@@ -68,8 +68,8 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div className="">
-      <div className="border-b-2 justify-between  mb-4 lg:mx-[70px] mx-3 items-center lg:text-[16rem] flex  text-[4.5rem]  leading-tight border-white">
+    <div className=" ">
+      <div className="border-b-2 font-bold justify-between  mb-4 lg:mx-[70px] mx-3 items-center lg:text-[16rem] flex  text-[4.5rem]  leading-tight border-white">
         <p className="texts">B</p>
         <p className="texts">R</p>
         <img className=" clamp-img" src="/images/heart2.png" />
@@ -242,7 +242,7 @@ const Homepage = () => {
       </div>
 
       <div className="space">
-        <div className="md:text-[6rem] text-[3rem]">
+        <div className="md:text-[6rem] font-semibold text-[3rem]">
           <p>ALL BLVCK</p>
           <p className="md:text-center ">EVERYTHING</p>
         </div>
