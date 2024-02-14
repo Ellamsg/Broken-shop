@@ -55,7 +55,6 @@ const Orderpayments = () => {
   const componentProps = {
     email,
     amount,
-
     metadata: {
       custom_fields: [
         {
