@@ -14,6 +14,7 @@ const Orderpayments = () => {
   const session = useSession();
  
 
+
   const cart = useCartStore((state) => state.cart);
   const cartTotal = useCartStore((state) => state.cartTotal);
   const clearCart = useCartStore((state) => state.clearCart);
@@ -61,7 +62,7 @@ const Orderpayments = () => {
           display_name: "Cart Items",
           variable_name: "cart_items",
           value: cart
-            .map((product) => `${product.quantity} ${product.name} `)
+            .map((product) => `${product.quantity} ${product.name} size:  ${product.sizes} `)
             .join(", "),
         },
         {
@@ -69,11 +70,8 @@ const Orderpayments = () => {
           variable_name: "name",//login
           value: name, // Assuming 'address' is a variable representing the user's address
         },
-        {
-          display_name: "Login email",
-          variable_name: "login email",
-          value: session?.data.user.email, // Assuming 'address' is a variable representing the user's address
-        },
+     
+
         {
           display_name: "Phone Number",
           variable_name: "phone_number",
