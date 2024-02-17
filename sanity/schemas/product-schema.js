@@ -28,6 +28,7 @@ const product = {
         },
       
       },
+
       {
         name: "image2",
         title: "Image2",
@@ -37,6 +38,8 @@ const product = {
         },
       
       },
+
+     
       {
         name: "description",
         title: "Description",
