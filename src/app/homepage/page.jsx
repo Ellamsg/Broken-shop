@@ -195,7 +195,7 @@ const Homepage = () => {
           <div className="md:w-[50%]   text-darkwind py-6  md:h-auto h-[550px]  w-[100%]  flex flex-col justify-center items-center ">
             <div className="flex flex-col justify-center items-center">
 <div className="w-[60%]">
-<p className="uppercase font-bold pb-3 text-center">BROKEN T-SHIRT, PINK LADIES EDITION</p>
+<p className="uppercase font-[ellams] font-bold pb-3 text-center">BROKEN T-SHIRT, PINK LADIES EDITION</p>
 </div>
             </div>
 
@@ -204,8 +204,8 @@ const Homepage = () => {
               className="h-[300px] object-cover w-[200px]"
             />
             <div className="  pt-4 flex items-center justify-items-center flex-col justify-center text-center">
-              <div className="md:w-[50%] w-[65%]">
-              <p className="pb-4 italic font-[ellams] font-semibold">I think it initially started with kids not being able to afford nice things,which forced them to create their own vibe.</p>
+              <div className="md:w-[50%] w-[75%]">
+              <p className="pb-4 italic font-[ellams] font-semibold">That beauty lies in imperfection. We believe that every setback, and every challenge we face in life is an opportunity to grow, evolve, and ultimately, to shine.</p>
               </div>
           
             </div>
@@ -255,17 +255,17 @@ const Homepage = () => {
       </div>
 
       <div className="space">
-        <div className="md:text-[6rem] font-semibold text-[3rem]">
-          <p>ALL BLVCK</p>
-          <p className="md:text-center ">EVERYTHING</p>
+        <div className="md:text-[6rem] uppercase font-semibold text-[3rem]">
+          <p>Discover </p>
+          <p className="md:text-center ">Unique Style</p>
         </div>
 
         <div className="text-end flex flex-col md:justify-end md:items-end md:justify-items-end">
           <div className="md:w-[50%]  text-start">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              fugit, illum tenetur consequuntur dignissimos non? Consectetur
-              temporibus exercitationem, debitis maiores, culpa velit voluptas
+            Broken , where fashion meets individuality. Explore our exclusive collection of clothing and caps designed to elevate your 
+            style and express your personality.
+             From trendy tops to statement caps, we have everything you need to stand out from the crowd.
             </p>
           </div>
         </div>
