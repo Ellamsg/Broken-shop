@@ -73,7 +73,7 @@ const order = {
       const { title, imageUrl } = selection;
       return {
         title,
-        media: <img src={imageUrl} alt={title} style={{ width: "500px" }} />, // Render the image using 'imageUrl'
+        media: <img src={imageUrl} alt={title} style={{ width: "1000px" }} />, // Render the image using 'imageUrl'
       };
     },
   },

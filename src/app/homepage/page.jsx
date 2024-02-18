@@ -184,48 +184,61 @@ const Homepage = () => {
       </section>
 
       <div className="relative py-3">
-        <div className="w-[100%] adverts flex flex-col md:flex-row">
-          <div className="md:w-[50%] h-[500px] md:h-[700px] w-[100%] md:order-first order-last">
+        <div className="w-[100%] bg-white adverts flex flex-col md:flex-row">
+          <div className="md:w-[50%] h-[550px] md:h-[700px] w-[100%] md:order-first order-last">
             <img
               src="/images/wop2.jpg"
               className="h-[100%] object-cover w-[100%]"
             />
           </div>
 
-          <div className="md:w-[50%] bg-white text-darkwind md:h-auto h-[500px] w-[100%]  flex flex-col justify-center items-center ">
-            <p>rail wshfjhfhbfggjg</p>
+          <div className="md:w-[50%]   text-darkwind py-6  md:h-auto h-[550px]  w-[100%]  flex flex-col justify-center items-center ">
+            <div className="flex flex-col justify-center items-center">
+<div className="w-[60%]">
+<p className="uppercase font-bold pb-3 text-center">BROKEN T-SHIRT, PINK LADIES EDITION</p>
+</div>
+            </div>
+
             <img
               src="/images/wop3.jpg"
               className="h-[300px] object-cover w-[200px]"
             />
-            <p>rail wshfjhfhbfggjg</p>
+            <div className="  pt-4 flex items-center justify-items-center flex-col justify-center text-center">
+              <div className="md:w-[50%] w-[65%]">
+              <p className="pb-4 italic font-[ellams] font-semibold">I think it initially started with kids not being able to afford nice things,which forced them to create their own vibe.</p>
+              </div>
+          
+            </div>
+           
           </div>
         </div>
         <div className="absolute items-center flex justify-center bottom-0 top-0 m-auto  left-0 right-0 ">
           <div className="  bg-darkwind text-white size-[120px] flex items-center  justify-center rounded-[100%]">
-            <p className="discover">discover</p>
+          <Link href="/about"> <p className="discover">About</p></Link> 
           </div>
         </div>
       </div>
 
       <div className="slant md:h-[50vh] h-[30vh] ">
-        <div class="slanted">
-          <div className=" scrolling-limit pt-3 change lg:text-base text-sm text-white bg-[#101010] ">
-            <div className="scrolling">
-              <p>
-                Broken discount Broken discount Broken discount Broken discount
-                Broken discount Broken discount Broken discount Broken discount
-                Broken discount Broken discount Broken discount Broken discount
-                Broken discount Broken discount Broken discount Broken discount
-                Broken discount Broken discount Broken discount Broken discount
-                Broken discount Broken discount Broken discount Broken discount
-                Broken discount Broken discount Broken discount Broken discount
-                Broken discount Broken discount Broken discount Broken discount
-                Broken discount Broken discount Broken discount Broken discount
-              </p>
-            </div>
-          </div>
+      <div className="slanted  items-center scrolling-limit  change lg:text-base text-sm text-white bg-[#101010] py-2 lg:py-3">
+        <div className="scrolling">
+          
+            <p>
+              Broken discount Broken discount Broken discount Broken discount
+              Broken discount Broken discount Broken discount Broken discount
+              Broken discount Broken discount Broken discount Broken discount
+              Broken discount Broken discount Broken discount Broken discount
+              Broken discount Broken discount Broken discount Broken discount
+              Broken discount Broken discount Broken discount Broken discount
+              Broken discount Broken discount Broken discount Broken discount
+              Broken discount Broken discount Broken discount Broken discount
+              Broken discount Broken discount Broken discount Broken discount
+              Broken discount Broken discount Broken discount Broken discount
+ 
+            </p>
+          
         </div>
+      </div>
       </div>
 
       <div className="py-[80px] space lg:px-[70px] px-3">
