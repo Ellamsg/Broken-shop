@@ -194,7 +194,7 @@ const Homepage = () => {
 
           <div className="md:w-[50%]   text-darkwind py-6  md:h-auto h-[550px]  w-[100%]  flex flex-col justify-center items-center ">
             <div className="flex flex-col justify-center items-center">
-<div className="w-[60%]">
+<div className="w-[60%] ">
 <p className="uppercase font-[ellams] font-bold pb-3 text-center">BROKEN T-SHIRT, PINK LADIES EDITION</p>
 </div>
             </div>
@@ -204,7 +204,7 @@ const Homepage = () => {
               className="h-[300px] object-cover w-[200px]"
             />
             <div className="  pt-4 flex items-center justify-items-center flex-col justify-center text-center">
-              <div className="md:w-[50%] w-[75%]">
+              <div className="md:w-[50%] w-[75%] mb-3">
               <p className="pb-4 italic font-[ellams] font-semibold">That beauty lies in imperfection. We believe that every setback, and every challenge we face in life is an opportunity to grow, evolve, and ultimately, to shine.</p>
               </div>
           
