@@ -71,7 +71,7 @@ const Cart = () => {
 
               <div className="flex   text-end w-[33.3%] flex-col justify-between ">
                 <div className="md:text-[1.5rem] text-[13px] items-end justify-items-end flex justify-end ">
-                  <p>${product.price}</p>
+                  <p>NGN{product.price}</p>
                 </div>
 
                 <button
@@ -93,7 +93,7 @@ const Cart = () => {
           <div className="lg:w-[50%] w-[100%]">
             <div className="flex py-3 md:text-[1.5rem] text-[13px] border-b-2 border-white justify-between">
               <p className="uppercase md:text-[16px] text-[13px]">SubTotal</p>
-              <p>${cartTotal}</p>
+              <p>NGN{cartTotal}</p>
             </div>
 
             <div className=" py-3 flex md:text-[1.5rem] text-[13px] justify-between">
