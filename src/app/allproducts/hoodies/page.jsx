@@ -9,7 +9,7 @@ const Hoodies = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const fetchedProducts = await getCategory("T-hoodies");
+        const fetchedProducts = await getCategory("hoodies");
         setHoodies(fetchedProducts);
       } catch (error) {
         console.error("Error fetching products:", error);
