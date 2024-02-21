@@ -157,7 +157,7 @@ export async function createOrder(email,cart) {
     cart.forEach((orderData) => {
       // Extract order data
       
-      const { name, quantity,size, price,image} = orderData;
+      const { name, quantity,size, price,image2} = orderData;
   
       // Create a promise for creating each order
       const orderCreationPromise = client.create({
@@ -165,7 +165,7 @@ export async function createOrder(email,cart) {
         name,
         qty: quantity,
         price,
-       image,
+       image2,
        sizes: size ,
         paid: true,
         delivered: false,

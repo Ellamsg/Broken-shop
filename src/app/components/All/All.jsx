@@ -25,7 +25,7 @@ const All = ({ product,imageStyle }) => {
           <div className="md:text-[16px] text-[13px] flex gap-2 uppercase">
             <p>{product?.name}</p>
 
-            <p>NGN{product?.price}</p>
+            <p>NGN{product?.price/ 100}</p>
           </div>
         </div>
       </Link>

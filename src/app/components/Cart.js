@@ -71,7 +71,7 @@ const Cart = () => {
 
               <div className="flex   text-end w-[33.3%] flex-col justify-between ">
                 <div className="md:text-[1.5rem] text-[13px] items-end justify-items-end flex justify-end ">
-                  <p>NGN{product.price}</p>
+                  <p>NGN{product.price / 100}</p>
                 </div>
 
                 <button
@@ -93,17 +93,17 @@ const Cart = () => {
           <div className="lg:w-[50%] w-[100%]">
             <div className="flex py-3 md:text-[1.5rem] text-[13px] border-b-2 border-white justify-between">
               <p className="uppercase md:text-[16px] text-[13px]">SubTotal</p>
-              <p>NGN{cartTotal}</p>
+              <p>NGN{cartTotal /100}</p>
             </div>
 
             <div className=" py-3 flex md:text-[1.5rem] text-[13px] justify-between">
               <p className="uppercase  md:text-[16px] text-[13px]">Total</p>
-              <p>NGN{cartTotal}</p>
+              <p>NGN{cartTotal/100}</p>
             </div>
 
             <Link href="/payments">
               <div className="bg-white text-center text-black py-3 w-[100%]">
-                <p> NGN{cartTotal} GO TO CHECKOUT</p>
+                <p> NGN{cartTotal/100} GO TO CHECKOUT</p>
               </div>
             </Link>
           </div>
