@@ -165,6 +165,7 @@ export async function createOrder(email,cart) {
         name,
         qty: quantity,
         price,
+      
        image2,
        sizes: size ,
         paid: true,
