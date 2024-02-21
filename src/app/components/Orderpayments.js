@@ -195,12 +195,15 @@ const Orderpayments = () => {
             </div>
             {cart.map((product) => (
               <div className="flex  justify-between  py-4" key={product.id}>
-                <div className=" md:w-[33.3%] flex gap-1 md:gap-5">
+                <div className="  flex  gap-1 md:gap-5">
+                  <div className=" ">
                   <img
                     src={product.image2}
-                    className=" size-[90px]  md:size-[150px]"
+                    className="  bg-red md:size-[130px] size-[90px]  "
                     alt="cart-img"
                   />
+                    </div>
+                 
                   <div className="uppercase flex flex-col justify-between">
                     <p className="md:text-[16px] text-[10px]">{product.name}</p>
                     <p className="text-[13px]">QTY:{product.quantity}</p>
