@@ -163,6 +163,22 @@ const Details = () => {
           </h1>
           <div className="flex md:flex-row gap-4 flex-col justify-between">
             <div className="flex gap-3 ">
+            <button
+                className={`border-2 hover:bg-white hover:text-black border-white size-6   ${
+                  selectedSize === "3XL" ? "bg-green-500" : ""
+                }`}
+                onClick={() => onSizeSelect("3XL")}
+              >
+                3XL
+              </button>
+            <button
+                className={`border-2 hover:bg-white hover:text-black border-white size-6   ${
+                  selectedSize === "2XL" ? "bg-green-500" : ""
+                }`}
+                onClick={() => onSizeSelect("2XL")}
+              >
+                2XL
+              </button>
               <button
                 className={`border-2 hover:bg-white hover:text-black border-white size-6   ${
                   selectedSize === "XL" ? "bg-green-500" : ""
