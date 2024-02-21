@@ -67,7 +67,7 @@ const order = {
   preview: {
     select: {
       title: "name",
-      imageUrl: "image", // Ensure 'imageUrl' is selected for both list and details views
+      imageUrl: "image2", // Ensure 'imageUrl' is selected for both list and details views
     },
     prepare(selection) {
       const { title, imageUrl } = selection;
