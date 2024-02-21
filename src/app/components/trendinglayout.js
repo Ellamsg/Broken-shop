@@ -1,5 +1,5 @@
 "use client";
-import { getCategory } from "../../../sanity/sanity-utils";
+import { getProducts } from "../../../sanity/sanity-utils";
 import Trending from "./trending/trending";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
@@ -22,17 +22,21 @@ const Trendinglayouts = () => {
 
     const [trending, setTrending] = useState([]);
     useEffect(() => {
-        const fetchData = async () => {
-          try {
-            const fetchedProducts = await getCategory("trending");
-            setTrending(fetchedProducts);
-          } catch (error) {
-            console.error("Error fetching products:", error);
-          }
-        };
-    
-        fetchData();
-      }, []);
+      const fetchData = async () => {
+        try {
+          const fetchedProducts = await getProducts();
+          // Shuffle the fetched products
+          const shuffledProducts = fetchedProducts.sort(() => Math.random() - 0.5);
+          // Take the first 3 products
+          const selectedProducts = shuffledProducts.slice(0, 3);
+          setTrending(selectedProducts);
+        } catch (error) {
+          console.error("Error fetching products:", error);
+        }
+      };
+  
+      fetchData();
+    }, []);
     
     return ( <div>
 

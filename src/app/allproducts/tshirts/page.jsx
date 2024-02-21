@@ -4,13 +4,13 @@ import { getCategory } from "../../../../sanity/sanity-utils";
 import All from "@/app/components/All/All";
 
 
-const Shortwear = () => {
-  const [shortwear, setShortwear] = useState([]);
+const Tshirt = () => {
+  const [tshirt, setTshirt] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const fetchedProducts = await getCategory("shortwear");
-        setShortwear(fetchedProducts);
+        const fetchedProducts = await getCategory("T-shirts");
+        setTshirt(fetchedProducts);
       } catch (error) {
         console.error("Error fetching products:", error);
       }
@@ -20,7 +20,7 @@ const Shortwear = () => {
   },[]);
   
 
-  const totalproducts = shortwear.length;
+  const totalproducts = tshirt.length;
 
   const imageStyles = [
     "w-[100%] h-[520px]", // Style for the first image
@@ -37,7 +37,7 @@ const Shortwear = () => {
         <p>{totalproducts}</p>
       </div>
       <div className="grid md:gap-6 grid-cols-2 gap-3 my-5 lg:grid-cols-3">
-        {shortwear.map((product, index) => (
+        {tshirt.map((product, index) => (
           <All
             key={product._id}
             imageStyle={imageStyles[index % imageStyles.length]}
@@ -50,4 +50,4 @@ const Shortwear = () => {
   );
 };
 
-export default Shortwear;
+export default Tshirt ;

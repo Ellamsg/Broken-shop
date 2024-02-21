@@ -52,7 +52,7 @@ const product = {
         type: 'string',
       
         options: {
-          list: ['featured','caps','trending','T-shirts'],
+          list: ['featured','caps','trending','T-shirts','shortwear','hoodies'],
           // You can add more categories as needed.
         },
       },
