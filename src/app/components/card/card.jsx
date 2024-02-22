@@ -7,10 +7,10 @@ const Card = ({ product }) => {
     <div className="my-5  mx-[5px]">
       <Link className="" href={`/details/${product?.slug}`}>
         <div className="">
-          <div className="bg-green">
+          <div className="lg:h-[450px] bg-white flex flex-col justify-center items-center h-[250px] md:h-[400px]">
             <img
               src={product?.image}
-           className="lg:h-[450px] md:h-[400px] w-[100%] h-[250px]"
+           className=" w-[100%] md:h-auto h-[100%] object-contain "
               alt="img"
             
             />

@@ -13,12 +13,12 @@ const All = ({ product,imageStyle }) => {
  ">
       <Link className="" href={`/details/${product?.slug}`}>
         <div className="">
-          <div className="">
+          <div className="md:h-auto h-[240px] flex flex-col justify-center items-center bg-white">
             <img
               src={product?.image}
               
               alt="img"
-              className={`lg:${imageStyle} allimage `}
+              className="allimage "
             />
           </div>
 
