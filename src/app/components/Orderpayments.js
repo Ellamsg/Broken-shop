@@ -226,14 +226,14 @@ const Orderpayments = () => {
                     <p className="uppercase  ">
                       SubTotal
                     </p>
-                    <p>NGN{cartTotal / 100}</p>
+                    <p>NGN{cartTotal && (cartTotal / 100).toLocaleString()}</p>
                   </div>
 
                   <div className=" py-3 flex md:text-[1.2rem] text-[13px] justify-between">
                     <p className="uppercase  md:text-[16px] text-[13px]">
                       Total
                     </p>
-                    <p>NGN{cartTotal / 100}</p>
+                    <p>NGN{cartTotal && (cartTotal / 100).toLocaleString()}</p>
                   </div>
                 </div>
               </div>
