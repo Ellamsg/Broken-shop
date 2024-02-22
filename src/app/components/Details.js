@@ -124,13 +124,11 @@ const Details = () => {
 const settings = {
   dots: false,
 
-  infinite: true,
 
-  speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
 
-  autoplaySpeed: 5000,
+
   arrows: false,
 }
 
@@ -159,19 +157,19 @@ const settings = {
         <h1 className=" leading-tight pb-2 md:hidden block uppercase text-[3rem] md:text-[4rem] ">
           {product?.name}
         </h1>
-        <div className="!lg:w-[50%] slider-container">
+        <div className="lg:w-[50%] bg-red ">
 
       
-        <Slider className="!space-x-4 !lg:w-[50%] !-m-[5.9px] !gap-3"  {...settings}>
-        <div className="lg:w-[50%]">
+        <Slider className=""  {...settings}>
+        <div className="lg:w-[50%] w-[100%]">
           {isLoadings ? (
-            <img className="h-[100%] " src="/images/loader.gif" />
+            <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
           ) : (
             <div className="  h-[100%] ">
               {/*check if data exist render or else no image */}
               {product?.image && product?.image ? (
                 <img
-                  className=" object-cover h-[300px] md:h-[600px]"
+                  className=" object-cover w-[100%] h-[300px] md:h-[600px]"
                   src={product?.image}
                 />
               ) : (
@@ -182,13 +180,13 @@ const settings = {
         </div>
         <div className="lg:w-[50%]">
           {isLoadings ? (
-            <img className="h-[100%] " src="/images/loader.gif" />
+            <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
           ) : (
             <div className="  h-[100%] ">
               {/*check if data exist render or else no image */}
               {product?.image2 && product?.image2 ? (
                 <img
-                  className=" object-cover h-[300px] md:h-[600px]"
+                  className=" object-cover w-[100%] h-[300px] md:h-[600px]"
                   src={product?.image2}
                 />
               ) : (
