@@ -25,7 +25,7 @@ const Trending = ({ product,imageStyle }) => {
           <div className="md:text-[16px] text-[13px] flex gap-4 uppercase">
             <p>{product?.name}</p>
 
-            <p>NGN{product?.price / 100}</p>
+            <p>NGN{product && (product.price / 100).toLocaleString()}</p>
           </div>
         </div>
       </Link>
