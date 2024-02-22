@@ -213,7 +213,7 @@ const Orderpayments = () => {
 
                 <div className="flex   text-end w-[33.3%] flex-col justify-between ">
                   <div className="md:text-[1.0rem] text-[13px] items-end justify-items-end flex justify-end ">
-                    <p>${product.price / 100}</p>
+                    <p>NGN{product && (product.price / 100).toLocaleString()}</p>
                   </div>
                 </div>
               </div>

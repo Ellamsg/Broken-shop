@@ -71,7 +71,7 @@ const Cart = () => {
 
               <div className="flex   text-end w-[33.3%] flex-col justify-between ">
                 <div className="md:text-[1.5rem] text-[13px] items-end justify-items-end flex justify-end ">
-                  <p>NGN{product.price / 100}</p>
+                  <p>NGN{product && (product.price / 100).toLocaleString()}</p>
                 </div>
 
                 <button

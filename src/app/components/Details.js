@@ -243,7 +243,7 @@ const Details = () => {
             <div className="flex gap-4 pt-4"></div>
             <div className="text-darkwind text-center lg:w-[55%] bg-white uppercase">
               <button onClick={onsubmit} className="bg-green-500 p-3">
-                NGN{product?.price /100} - ADD TO CART
+              NGN{product && (product.price / 100).toLocaleString()} - ADD TO CART
               </button>
             </div>
           </div>
