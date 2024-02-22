@@ -13,12 +13,12 @@ const Trending = ({ product,imageStyle }) => {
       
       <Link className="" href={`/details/${product?.slug}`}>
         <div className="">
-          <div className="">
+          <div className="md:h-auto h-[440px] flex flex-col justify-center items-center bg-white">
             <img
               src={product?.image}
               
               alt="img"
-              className={`lg:${imageStyle} mage `}
+              className="allimage"
             />
           </div>
 
