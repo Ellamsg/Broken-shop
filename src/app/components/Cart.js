@@ -93,17 +93,17 @@ const Cart = () => {
           <div className="lg:w-[50%] w-[100%]">
             <div className="flex py-3 md:text-[1.5rem] text-[13px] border-b-2 border-white justify-between">
               <p className="uppercase md:text-[16px] text-[13px]">SubTotal</p>
-              <p>NGN{cartTotal /100}</p>
+              <p>NGN{cartTotal && (cartTotal / 100).toLocaleString()} </p>
             </div>
 
             <div className=" py-3 flex md:text-[1.5rem] text-[13px] justify-between">
               <p className="uppercase  md:text-[16px] text-[13px]">Total</p>
-              <p>NGN{cartTotal/100}</p>
+              <p>NGN{cartTotal && (cartTotal / 100).toLocaleString()} </p>
             </div>
 
             <Link href="/payments">
               <div className="bg-white text-center text-black py-3 w-[100%]">
-                <p> NGN{cartTotal/100} GO TO CHECKOUT</p>
+                <p> NGN{cartTotal && (cartTotal / 100).toLocaleString()} GO TO CHECKOUT</p>
               </div>
             </Link>
           </div>
