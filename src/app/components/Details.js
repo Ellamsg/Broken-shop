@@ -173,11 +173,11 @@ const Details = () => {
           {isLoadings ? (
             <img className="h-[100%] w-[100%]" src="/images/loader.gif" />
           ) : (
-            <div className=" w-[100%] h-[100%] ">
+            <div className=" w-[100%] h-[100%] bg-white ">
               {/*check if data exist render or else no image */}
               {product?.image && product?.image ? (
                 <img
-                  className="w-[100%] object-cover h-[300px] md:h-[600px]"
+                  className="w-[100%] object-contain h-[400px] md:h-[600px]"
                   src={product?.image}
                 />
               ) : (
@@ -196,7 +196,7 @@ const Details = () => {
               {/*check if data exist render or else no image */}
               {product?.image2 && product?.image2 ? (
                 <img
-                  className="w-[100%] object-cover h-[300px] md:h-[600px]"
+                  className="w-[100%] object-cover h-[400px] md:h-[600px]"
                   src={product?.image2}
                 />
               ) : (
