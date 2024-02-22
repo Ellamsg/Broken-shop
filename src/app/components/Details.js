@@ -122,14 +122,14 @@ const Details = () => {
 
 //slider
 const settings = {
-  dots: false,
+  dots: true,
 
 
   slidesToShow: 1,
   slidesToScroll: 1,
-
-
   arrows: false,
+
+ 
 }
 
 
@@ -169,7 +169,7 @@ const settings = {
               {/*check if data exist render or else no image */}
               {product?.image && product?.image ? (
                 <img
-                  className=" object-cover w-[100%] h-[300px] md:h-[600px]"
+                  className=" object-contain w-[100%] h-[400px] md:h-[600px]"
                   src={product?.image}
                 />
               ) : (
@@ -186,7 +186,7 @@ const settings = {
               {/*check if data exist render or else no image */}
               {product?.image2 && product?.image2 ? (
                 <img
-                  className=" object-cover w-[100%] h-[300px] md:h-[600px]"
+                  className=" object-contain w-[100%] h-[400px] md:h-[600px]"
                   src={product?.image2}
                 />
               ) : (
