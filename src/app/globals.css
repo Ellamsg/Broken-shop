@@ -41,7 +41,9 @@ body {
 .collections{
   @apply items-center flex justify-between
 }
-
+.links{
+  @apply hover:border-b-2 ease-in-out transition-all hover:border-mono
+}
 
 .collections img{
   @apply md:size-[35px] size-[30px] lg:size-[50px]
