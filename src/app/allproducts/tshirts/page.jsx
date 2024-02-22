@@ -33,7 +33,7 @@ const Tshirt = () => {
   return (
     <div>
       <div className="border-white flex border-b-2 py-4">
-        <p className="text-6xl">SHORTS</p>
+        <p className="text-6xl">T-SHIRTS</p>
         <p>{totalproducts}</p>
       </div>
       <div className="grid md:gap-6 grid-cols-2 gap-3 my-5 lg:grid-cols-3">
