@@ -27,7 +27,7 @@ const Homepage = () => {
       {
         breakpoint: 868, // Adjust settings for screens with a maximum width of 768px
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 2,
           // Add any additional settings for small screens here
         },
@@ -35,7 +35,7 @@ const Homepage = () => {
       {
         breakpoint: 680, // Adjust settings for screens with a maximum width of 480px
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 2,
           // Add any additional settings for screens with a width of 480px or less
         },

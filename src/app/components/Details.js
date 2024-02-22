@@ -7,15 +7,7 @@ import { useRouter } from "next/navigation";
 import Trendinglayouts from "./trendinglayout";
 import { client } from "../../../sanity/sanity-utils";
 import { useParams } from "next/navigation";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-
-// Import Swiper styles
-import 'swiper/css';
+import Slider from "react-slick";
 
 import Link from "next/link";
 const Details = () => {
@@ -129,8 +121,18 @@ const Details = () => {
 
 
 //slider
+const settings = {
+  dots: false,
 
+  infinite: true,
 
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+
+  autoplaySpeed: 5000,
+  arrows: false,
+}
 
 
   return (
@@ -157,27 +159,19 @@ const Details = () => {
         <h1 className=" leading-tight pb-2 md:hidden block uppercase text-[3rem] md:text-[4rem] ">
           {product?.name}
         </h1>
-       
+        <div className="!lg:w-[50%] slider-container">
 
-        <Swiper className="lg:w-[50%] w-[100%]"
-         modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={1}
-      slidesPerView={1}
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
- <SwiperSlide>
-        <div className="">
+      
+        <Slider className="!space-x-4 !lg:w-[50%] !-m-[5.9px] !gap-3"  {...settings}>
+        <div className="lg:w-[50%]">
           {isLoadings ? (
-            <img className="h-[100%] w-[100%]" src="/images/loader.gif" />
+            <img className="h-[100%] " src="/images/loader.gif" />
           ) : (
-            <div className=" w-[100%] h-[100%] bg-white ">
+            <div className="  h-[100%] ">
               {/*check if data exist render or else no image */}
               {product?.image && product?.image ? (
                 <img
-                  className="w-[100%] object-contain h-[400px] md:h-[600px]"
+                  className=" object-cover h-[300px] md:h-[600px]"
                   src={product?.image}
                 />
               ) : (
@@ -186,17 +180,15 @@ const Details = () => {
             </div>
           )}
         </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="">
+        <div className="lg:w-[50%]">
           {isLoadings ? (
-            <img className="h-[100%] w-[100%]" src="/images/loader.gif" />
+            <img className="h-[100%] " src="/images/loader.gif" />
           ) : (
-            <div className=" w-[100%] h-[100%] ">
+            <div className="  h-[100%] ">
               {/*check if data exist render or else no image */}
               {product?.image2 && product?.image2 ? (
                 <img
-                  className="w-[100%] object-cover h-[400px] md:h-[600px]"
+                  className=" object-cover h-[300px] md:h-[600px]"
                   src={product?.image2}
                 />
               ) : (
@@ -205,9 +197,9 @@ const Details = () => {
             </div>
           )}
         </div>
-        </SwiperSlide>
 
-        </Swiper>
+        </Slider>
+        </div>
       
 
         <div className="lg:w-[50%] flex flex-col gap-4 ">
