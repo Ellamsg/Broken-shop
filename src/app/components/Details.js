@@ -7,6 +7,16 @@ import { useRouter } from "next/navigation";
 import Trendinglayouts from "./trendinglayout";
 import { client } from "../../../sanity/sanity-utils";
 import { useParams } from "next/navigation";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+// Import Swiper styles
+import 'swiper/css';
+
 import Link from "next/link";
 const Details = () => {
   const session = useSession();
@@ -115,6 +125,14 @@ const Details = () => {
     }
   };
 
+
+
+
+//slider
+
+
+
+
   return (
     <div className=" py-4 md:py-6 relative">
       { pop && (
@@ -139,7 +157,38 @@ const Details = () => {
         <h1 className=" leading-tight pb-2 md:hidden block uppercase text-[3rem] md:text-[4rem] ">
           {product?.name}
         </h1>
-        <div className="lg:w-[50%]">
+       
+
+        <Swiper className="lg:w-[50%] w-[100%]"
+         modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={1}
+      slidesPerView={1}
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+ <SwiperSlide>
+        <div className="">
+          {isLoadings ? (
+            <img className="h-[100%] w-[100%]" src="/images/loader.gif" />
+          ) : (
+            <div className=" w-[100%] h-[100%] ">
+              {/*check if data exist render or else no image */}
+              {product?.image && product?.image ? (
+                <img
+                  className="w-[100%] object-cover h-[300px] md:h-[600px]"
+                  src={product?.image}
+                />
+              ) : (
+                <p>No image available</p>
+              )}{" "}
+            </div>
+          )}
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="">
           {isLoadings ? (
             <img className="h-[100%] w-[100%]" src="/images/loader.gif" />
           ) : (
@@ -156,6 +205,10 @@ const Details = () => {
             </div>
           )}
         </div>
+        </SwiperSlide>
+
+        </Swiper>
+      
 
         <div className="lg:w-[50%] flex flex-col gap-4 ">
           <h1 className="hidden md:block leading-tight uppercase text-[3rem] md:text-[4rem] ">
