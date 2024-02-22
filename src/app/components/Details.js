@@ -269,48 +269,57 @@ const Details = () => {
           />
         </div>
 
-        <div className="text-black  lg:w-[50%] justify-between flex-col flex">
-          <div className="">
-            <p>lfjhbjkgkgbgkhgkhgjbgjhggjghbghgjgj</p>
+        <div className="text-black md:text-start text-center  lg:w-[50%] justify-between flex-col flex">
+          <div className="font-[ellams] md:py-0 py-3 italic">
+            <p>Embrace Elegance, Elevate Your Style with Broken</p>
           </div>
 
           <div className="select pt-5 md:pt-0 ">
         
-            <p className="text-end text-3xl py-0 md:py-6">
+            <p className="md:text-end text-start font-semibold md:text-3xl text-[18px] py-2 md:py-6">
               CHECK OUT ALL NEW COLLECTIONS
             </p>
          
            
             <div className="border-black collections border-t-2">
-              <Link href="/allproducts/caps">
+              
               <p>CAP/SNAP BACKS</p>
-              </Link>
-        
+           
+              <Link href="/allproducts/caps">
               <img src="/icons/dark-arrow.png" alt="arrow"/>
+              </Link>
             </div>
             <div className="collections">
-            <Link href="/allproducts/tshirts">
+          
               <p>T-SHIRTS</p>
-              </Link>
+          
+              <Link href="/allproducts/tshirts">
               <img src="/icons/dark-arrow.png" alt="arrow"/>
+              </Link>
             </div>
             <div className="collections">
-            <Link href="/allproducts/shortwear">
+   
               <p>SHORTS</p>
-              </Link>
+            
+              <Link href="/allproducts/shortwear">
               <img src="/icons/dark-arrow.png" alt="arrow"/>
+              </Link>
             </div>
             <div className="collections">
-            <Link href="/allproducts/hoodies">
+          
               <p>HOODIES</p>
-              </Link>
+             
+              <Link href="/allproducts/hoodies">
               <img src="/icons/dark-arrow.png" alt="arrow"/>
+              </Link>
             </div>
             <div className="collections">
-            <Link href="/allproducts">
+           
               <p>ALL COLLECTIONS</p>
-              </Link>
+            
+              <Link href="/allproducts">
               <img src="/icons/dark-arrow.png" alt="arrow"/>
+              </Link>
             </div>
           </div>
         </div>
