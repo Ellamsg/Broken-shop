@@ -22,7 +22,7 @@ const All = ({ product,imageStyle }) => {
             />
           </div>
 
-          <div className="md:text-[16px] text-[13px] flex gap-2 uppercase">
+          <div className="md:text-[16px] text-[11px] flex gap-2 uppercase">
             <p className="">{product?.name}</p>
 
             <p>NGN{product && (product.price / 100).toLocaleString()}</p>
