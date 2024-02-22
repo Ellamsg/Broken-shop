@@ -161,7 +161,7 @@ const settings = {
 
       
         <Slider className=""  {...settings}>
-        <div className="lg:w-[50%] w-[100%]">
+        <div className="">
           {isLoadings ? (
             <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
           ) : (
@@ -178,7 +178,7 @@ const settings = {
             </div>
           )}
         </div>
-        <div className="lg:w-[50%]">
+        <div className="">
           {isLoadings ? (
             <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
           ) : (
