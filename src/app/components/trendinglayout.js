@@ -53,7 +53,7 @@ const Trendinglayouts = () => {
             />
           ))}
         </div>
-        <div className="lg:absolute mb-6 flex justify-center bottom-0 left-0 right-0 ">
+        <div className="mb-6 flex justify-center  ">
           <div className=" h-[150px]  border-white border-2 w-[150px] flex items-center  justify-center rounded-[100%]">
         <Link href="/allproducts"> <p className="discover">discover</p></Link>   
           </div>

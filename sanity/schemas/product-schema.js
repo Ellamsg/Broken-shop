@@ -46,6 +46,7 @@ const product = {
         type: "text",
         validation: (Rule) => Rule.required(),
       },
+      
       {
         name: 'category',
         title: 'Category',
@@ -56,6 +57,7 @@ const product = {
           // You can add more categories as needed.
         },
       },
+
       {
         name: "price",
         title: "Price",

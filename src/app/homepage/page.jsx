@@ -14,7 +14,9 @@ import Trendinglayouts from "../components/trendinglayout";
 const Homepage = () => {
   const settings = {
     dots: false,
+    className: "center",
     infinite: true,
+    centerMode: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 3,
