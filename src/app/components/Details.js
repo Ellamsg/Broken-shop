@@ -153,14 +153,14 @@ const settings = {
 
       )}
 
-      <div className="flex flex-col space  lg:flex-row lg:gap-[80px]  ">
+      <div className="flex flex-col space lg:gap-[30px] lg:flex-row  ">
         <h1 className=" leading-tight pb-2 md:hidden block uppercase text-[3rem] md:text-[4rem] ">
           {product?.name}
         </h1>
-        <div className="lg:w-[50%] bg-red ">
+        <div className="lg:w-[47%] border-2 bg-white ">
 
       
-        <Slider className=""  {...settings}>
+        <Slider className=" "  {...settings}>
         <div className="">
           {isLoadings ? (
             <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
