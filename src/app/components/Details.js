@@ -289,19 +289,19 @@ const Details = () => {
               <img src="/icons/dark-arrow.png" alt="arrow"/>
             </div>
             <div className="collections">
-            <Link href="/allproducts/caps">
+            <Link href="/allproducts/tshirts">
               <p>T-SHIRTS</p>
               </Link>
               <img src="/icons/dark-arrow.png" alt="arrow"/>
             </div>
             <div className="collections">
-            <Link href="/allproducts/caps">
+            <Link href="/allproducts/shortwear">
               <p>SHORTS</p>
               </Link>
               <img src="/icons/dark-arrow.png" alt="arrow"/>
             </div>
             <div className="collections">
-            <Link href="/allproducts/caps">
+            <Link href="/allproducts/hoodies">
               <p>HOODIES</p>
               </Link>
               <img src="/icons/dark-arrow.png" alt="arrow"/>
