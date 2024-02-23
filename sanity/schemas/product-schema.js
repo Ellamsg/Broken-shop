@@ -20,17 +20,16 @@ const product = {
         validation: (Rule) => Rule.required(),
       },
       {
-        name: "image",
-        title: "Image",
+        name: "image2",
+        title: "image1",
         type: "image",
         options: {
           hotspot: true, // Allows selecting a hotspot for cropping
         },
       
       },
-
       {
-        name: "image2",
+        name: "image",
         title: "Image2",
         type: "image",
         options: {
@@ -38,6 +37,8 @@ const product = {
         },
       
       },
+
+      
       {
         name: "image3",
         title: "Image3",

@@ -15,7 +15,7 @@ const All = ({ product,imageStyle }) => {
         <div className="">
           <div className="md:h-auto h-[240px] flex flex-col justify-center items-center bg-white">
             <img
-              src={product?.image}
+              src={product?.image2}
               
               alt="img"
               className="allimage "

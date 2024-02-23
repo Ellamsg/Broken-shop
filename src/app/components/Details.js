@@ -167,10 +167,10 @@ const settings = {
       <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
     ) : (
       <div className="  h-[100%] ">
-        {product?.image && product?.image ? (
+        {product?.image2 && product?.image2 ? (
           <img
             className="object-contain w-[100%] h-[400px] md:h-[600px]"
-            src={product?.image}
+            src={product?.image2}
           />
         ) : (
           <p>No image available</p>
@@ -183,10 +183,10 @@ const settings = {
       <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
     ) : (
       <div className="  h-[100%] ">
-        {product?.image2 && product?.image2 ? (
+        {product?.image && product?.image ? (
           <img
             className="object-contain w-[100%] h-[400px] md:h-[600px]"
-            src={product?.image2}
+            src={product?.image}
           />
         ) : (
           <p>No image available</p>

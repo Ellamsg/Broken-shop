@@ -10,8 +10,8 @@ const order = {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: "image",
-      title: "Image",
+      name: "image2",
+      title: "Image2",
       type: "url",
       validation: (Rule) => Rule.uri({ scheme: ["http", "https"] }),
     },
@@ -67,7 +67,7 @@ const order = {
   preview: {
     select: {
       title: "name",
-      imageUrl: "image", // Ensure 'imageUrl' is selected for both list and details views
+      imageUrl: "image2", // Ensure 'imageUrl' is selected for both list and details views
     },
     prepare(selection) {
       const { title, imageUrl } = selection;
