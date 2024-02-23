@@ -10,8 +10,8 @@ const order = {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: "image2",
-      title: "Image2",
+      name: "image",
+      title: "Image",
       type: "url",
       validation: (Rule) => Rule.uri({ scheme: ["http", "https"] }),
     },
