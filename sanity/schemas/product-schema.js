@@ -38,6 +38,15 @@ const product = {
         },
       
       },
+      {
+        name: "image3",
+        title: "Image3",
+        type: "image",
+        options: {
+          hotspot: true, // Allows selecting a hotspot for cropping
+        },
+      
+      },
 
      
       {
