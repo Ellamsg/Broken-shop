@@ -36,7 +36,8 @@ const Details = () => {
                     price,
                     _createdAt,
                     "image":image.asset->url,
-                    "image2":image2.asset->url
+                    "image2":image2.asset->url,
+                    "image3":image3.asset->url
                    
                   }
                 `;
@@ -160,44 +161,60 @@ const settings = {
         <div className="lg:w-[47%] border-2 bg-white ">
 
       
-        <Slider className=" "  {...settings}>
-        <div className="">
-          {isLoadings ? (
-            <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
+        <Slider className=" " {...settings}>
+  <div className="">
+    {isLoadings ? (
+      <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
+    ) : (
+      <div className="  h-[100%] ">
+        {product?.image && product?.image ? (
+          <img
+            className="object-contain w-[100%] h-[400px] md:h-[600px]"
+            src={product?.image}
+          />
+        ) : (
+          <p>No image available</p>
+        )}
+      </div>
+    )}
+  </div>
+  <div className="">
+    {isLoadings ? (
+      <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
+    ) : (
+      <div className="  h-[100%] ">
+        {product?.image2 && product?.image2 ? (
+          <img
+            className="object-contain w-[100%] h-[400px] md:h-[600px]"
+            src={product?.image2}
+          />
+        ) : (
+          <p>No image available</p>
+        )}
+      </div>
+    )}
+  </div>
+  {/* Conditionally render the third slide only if product.image3 exists */}
+  {product?.image3 && product?.image3 && (
+    <div className="">
+      {isLoadings ? (
+        <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
+      ) : (
+        <div className="  h-[100%] ">
+          {product?.image3 && product?.image3 ? (
+            <img
+              className="object-contain w-[100%] h-[400px] md:h-[600px]"
+              src={product?.image3}
+            />
           ) : (
-            <div className="  h-[100%] ">
-              {/*check if data exist render or else no image */}
-              {product?.image && product?.image ? (
-                <img
-                  className=" object-contain w-[100%] h-[400px] md:h-[600px]"
-                  src={product?.image}
-                />
-              ) : (
-                <p>No image available</p>
-              )}{" "}
-            </div>
+            <p>No image available</p>
           )}
         </div>
-        <div className="">
-          {isLoadings ? (
-            <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
-          ) : (
-            <div className="  h-[100%] ">
-              {/*check if data exist render or else no image */}
-              {product?.image2 && product?.image2 ? (
-                <img
-                  className=" object-contain w-[100%] h-[400px] md:h-[600px]"
-                  src={product?.image2}
-                />
-              ) : (
-                <p>No image available</p>
-              )}{" "}
-            </div>
-          )}
-        </div>
+      )}
+    </div>
+  )}
+</Slider>
 
-       
-        </Slider>
         </div>
       
 
