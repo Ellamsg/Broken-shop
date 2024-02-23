@@ -196,6 +196,24 @@ const settings = {
           )}
         </div>
 
+        <div className="">
+          {isLoadings ? (
+            <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
+          ) : (
+            <div className="  h-[100%] ">
+              {/*check if data exist render or else no image */}
+              {product?.image3 && product?.image3 ? (
+                <img
+                  className=" object-contain w-[100%] h-[400px] md:h-[600px]"
+                  src={product?.image3}
+                />
+              ) : (
+                <p>No image available</p>
+              )}{" "}
+            </div>
+          )}
+        </div>
+
         </Slider>
         </div>
       
