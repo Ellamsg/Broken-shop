@@ -53,7 +53,7 @@ const Cart = () => {
             >
               <div className=" md:w-[33.3%] flex gap-1 md:gap-5">
                 <img
-                  src={product.image2}
+                  src={product.image}
                   className=" size-[90px]  md:size-[200px]"
                   alt="cart-img"
                 />

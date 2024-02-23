@@ -198,7 +198,7 @@ const Orderpayments = () => {
                 <div className="  flex  gap-1 md:gap-5">
                   <div className=" ">
                   <img
-                    src={product.image2}
+                    src={product.image}
                     className="  bg-red md:size-[130px] size-[90px]  "
                     alt="cart-img"
                   />

@@ -6,7 +6,7 @@ import YouTube from "react-youtube";
 import { getCategory } from "../../../sanity/sanity-utils";
 import React, { useState, useEffect } from "react";
 import Card from "../components/card/card";
-
+import { getProducts } from "../../../sanity/sanity-utils";
 import Slider from "react-slick";
 import Link from "next/link";
 import Trendinglayouts from "../components/trendinglayout";
@@ -59,8 +59,12 @@ const Homepage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const fetchedProducts = await getCategory("featured");
-        setProducts(fetchedProducts);
+        const fetchedProducts = await getProducts();
+        // Shuffle the fetched products
+        const shuffledProducts = fetchedProducts.sort(() => Math.random() - 0.5);
+        // Take the first 3 products
+      
+        setProducts(shuffledProducts );
       } catch (error) {
         console.error("Error fetching products:", error);
       }

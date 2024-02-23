@@ -57,7 +57,7 @@ export default function Order() {
                 <div className="flex gap-3">
                   <img
                     className="md:size-[200px] size-[110px]"
-                    src={product.image2}
+                    src={product.image}
                   />
                   <div className="justify-between flex flex-col">
                     <div className="">
