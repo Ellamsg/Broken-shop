@@ -251,7 +251,7 @@ const Homepage = () => {
         <video
           className="w-[100%] drop h-[400px] md:h-[600px] object-cover"
           src="https://res.cloudinary.com/dalmrzjps/video/upload/v1707251993/broken-ads_e3c1gs.mp4"
-          poster="https://res.cloudinary.com/dmwfd0zhh/video/upload/q_auto,f_auto,so_0.05/v1701766450/Pith%20Africa/pith_film_short_05750464c5.jpg"
+          poster="/images/mock13.jpg"
           autoPlay
           loop
           muted
