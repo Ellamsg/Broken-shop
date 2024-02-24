@@ -202,7 +202,7 @@ const Header = () => {
               </div>
             ) : (
               <Link className="" href="/cart">
-                Login{" "}
+               <img className="size-[20px]" src="/icons/login.png" alt="login" />
               </Link>
             )}
           </div>
