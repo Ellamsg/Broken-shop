@@ -59,17 +59,17 @@ const Cart = () => {
                 />
                 <div className="uppercase flex flex-col justify-between">
                   <p className="md:text-[16px] text-[10px]">{product.name}</p>{" "}
-                  <p className="md:text-[1.5rem] text-[13px]">
-                  {product.quantity}
+                  <p className="md:text-[16px] text-[13px]">
+                  Qty:{product.quantity}
                 </p>
-                  <p className="text-[13px]">{product.size}</p>{" "}
+                  <p className="md:text-[16px] text-[13px]">SIZE:{product.size}</p>{" "}
                 </div>
               </div>
 
           
 
               <div className="flex   text-end w-[33.3%] flex-col justify-between ">
-                <div className="md:text-[1.5rem] text-[13px] items-end justify-items-end flex justify-end ">
+                <div className="md:text-[16px] text-[13px] items-end justify-items-end flex justify-end ">
                   <p>NGN{product && (product.price / 100).toLocaleString()}</p>
                 </div>
 
@@ -90,7 +90,7 @@ const Cart = () => {
 
         <div className="flex lg:justify-end">
           <div className="lg:w-[50%] w-[100%]">
-            <div className="flex py-3 md:text-[1.5rem] text-[13px] border-b-2 border-white justify-between">
+            <div className="flex py-3 md:text-[16px] text-[13px] border-b-2 border-white justify-between">
               <p className="uppercase md:text-[16px] text-[13px]">SubTotal</p>
               <p>NGN{cartTotal && (cartTotal / 100).toLocaleString()} </p>
             </div>
