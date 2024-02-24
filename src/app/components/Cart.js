@@ -39,7 +39,7 @@ const Cart = () => {
         <p className="text-[16px]  underline">CART</p>
         <div className="flex py-3 md:text-[16px] text-[9px] justify-between border-white border-b-2 ">
           <p>PRODUCT</p>
-          <p>QUANTITY</p>
+          
           <p>PRICE</p>
         </div>
 
@@ -59,15 +59,14 @@ const Cart = () => {
                 />
                 <div className="uppercase flex flex-col justify-between">
                   <p className="md:text-[16px] text-[10px]">{product.name}</p>{" "}
+                  <p className="md:text-[1.5rem] text-[13px]">
+                  {product.quantity}
+                </p>
                   <p className="text-[13px]">{product.size}</p>{" "}
                 </div>
               </div>
 
-              <div className=" text-center  md:w-[33.3%]  ">
-                <p className="md:text-[1.5rem] text-[13px]">
-                  {product.quantity}
-                </p>
-              </div>
+          
 
               <div className="flex   text-end w-[33.3%] flex-col justify-between ">
                 <div className="md:text-[1.5rem] text-[13px] items-end justify-items-end flex justify-end ">

@@ -78,7 +78,7 @@ const Homepage = () => {
       <div className="border-b-2 font-bold justify-between  mb-4 lg:mx-[70px] mx-3 items-center lg:text-[16rem] flex  text-[4.5rem]  leading-tight border-white">
         <p className="texts">B</p>
         <p className="texts">R</p>
-        <img className=" clamp-img" src="/images/heart2.png" />
+        <img className=" clamp-img" src="/images/brokenheart.png" />
         <p className="texts">K</p>
         <p className="texts">E</p>
         <p className="texts">N</p>
