@@ -4,10 +4,10 @@ import "./card.css";
 
 const Card = ({ product }) => {
   return (
-    <div className="my-5 lg:h-[500px]  mx-[5px]">
+    <div className="my-5   mx-[5px]">
       <Link className="" href={`/details/${product?.slug}`}>
         <div className="">
-          <div className="lg:h-[450px] bg-white flex flex-col justify-center items-center h-[250px] md:h-[400px]">
+          <div className="lg:h-[430px] bg-white flex flex-col justify-center items-center h-[250px] md:h-[400px]">
             <img
               src={product?.image2}
            className=" w-[100%]  h-[100%] object-contain "
