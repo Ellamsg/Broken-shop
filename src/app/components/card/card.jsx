@@ -10,7 +10,7 @@ const Card = ({ product }) => {
           <div className="lg:h-[430px] bg-white flex flex-col justify-center items-center h-[250px] md:h-[400px]">
             <img
               src={product?.image2}
-           className=" w-[100%]  h-[100%] object-contain "
+           className=" w-[100%]   h-[100%] object-contain "
               alt="img"
             
             />

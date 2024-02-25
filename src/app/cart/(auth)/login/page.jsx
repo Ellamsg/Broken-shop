@@ -21,7 +21,7 @@ const Login = () => {
   };
 
   return (
-    <div className="space pb-7 flex flex-col justify-center items-center">
+    <div className="space pb-7 flex pt-4 flex-col justify-center items-center">
       <div className=" w-[100%] md:w-[70%] lg:w-[50%] ">
         <form className="flex  pt-3 flex-col gap-3" onSubmit={handleSubmit}>
           <label id="email">Email</label>
