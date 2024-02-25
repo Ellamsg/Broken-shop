@@ -4,7 +4,7 @@
 import Link from "next/link";
 
 
-const All = ({ product,imageStyle }) => {
+const All = ({ product }) => {
   return (
     <div>
 
@@ -13,12 +13,12 @@ const All = ({ product,imageStyle }) => {
  ">
       <Link className="" href={`/details/${product?.slug}`}>
         <div className="">
-          <div className="md:h-auto h-[240px] flex flex-col justify-center items-center bg-white">
+          <div className="md:h-auto bg-white h-[240px] flex flex-col justify-center items-center ">
             <img
               src={product?.image2}
               
               alt="img"
-              className="allimage "
+              className="object-contain h-[100%] w-[100%] "
             />
           </div>
 

@@ -308,10 +308,12 @@ const settings = {
               </button>
             </div>
           </div>
-
-          <button className=" border-2 md:block hidden border-white p-3 w-[100%]">
+             <Link href="/allproducts">
+             <button className=" border-2 md:block hidden border-white p-3 w-[100%]">
             GO BACK TO SHOPPING
           </button>
+             </Link>
+         
         </div>
       </div>
 

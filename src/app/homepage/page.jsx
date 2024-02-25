@@ -230,8 +230,7 @@ const Homepage = () => {
         <div className="scrolling">
           
             <p>
-              Broken discount Broken discount Broken discount Broken discount
-              Broken discount Broken discount Broken discount Broken discount
+            Broken discount Broken discount Broken discount Broken discount
               Broken discount Broken discount Broken discount Broken discount
               Broken discount Broken discount Broken discount Broken discount
               Broken discount Broken discount Broken discount Broken discount
