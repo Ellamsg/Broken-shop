@@ -61,10 +61,12 @@ const Homepage = () => {
       try {
         const fetchedProducts = await getProducts();
         // Shuffle the fetched products
-        const shuffledProducts = fetchedProducts.sort(() => Math.random() - 0.5);
+        const shuffledProducts = fetchedProducts.sort(
+          () => Math.random() - 0.5
+        );
         // Take the first 3 products
-      
-        setProducts(shuffledProducts );
+
+        setProducts(shuffledProducts);
       } catch (error) {
         console.error("Error fetching products:", error);
       }
@@ -148,15 +150,29 @@ const Homepage = () => {
       <div className="flex md:text-[16px] space  text-[12px]  justify-between">
         <div className="flex gap-6 py-4">
           <div>
-            <p>Instagram</p>
+            <a
+              href="https://www.instagram.com/brokenbycoker?igsh=cTBqdjMxZGc2MnJ0&utm_source=qr"
+              target="_blank"
+            >
+              <p>Instagram</p>
+            </a>
           </div>
           <div>
-            <p>Tiktok</p>
+            <a
+              href="https://www.tiktok.com/@brokenbycoker?_t=8kBa1FEy8tq&_r=1"
+              target="_blank"
+            >
+              <p> Tiktok</p>
+            </a>
           </div>
         </div>
 
         <div className=" flex items-center">
-          <p>@broken.ng</p>
+          <a href="mailto:Brokenbycoker@gmail.com" target="_blank">
+
+          <p>Brokenbtcoker@gmail.com</p>
+          </a>
+         
         </div>
       </div>
 
@@ -200,9 +216,11 @@ const Homepage = () => {
 
           <div className="md:w-[50%]   text-darkwind py-6  md:h-auto h-[550px]  w-[100%]  flex flex-col justify-center items-center ">
             <div className="flex flex-col justify-center items-center">
-<div className="w-[60%] ">
-<p className="uppercase font-[ellams] font-bold pb-3 text-center">BROKEN T-SHIRT, PINK LADIES EDITION</p>
-</div>
+              <div className="w-[60%] ">
+                <p className="uppercase font-[ellams] font-bold pb-3 text-center">
+                  BROKEN T-SHIRT, PINK LADIES EDITION
+                </p>
+              </div>
             </div>
 
             <img
@@ -211,26 +229,29 @@ const Homepage = () => {
             />
             <div className="  pt-4 flex items-center justify-items-center flex-col justify-center text-center">
               <div className="md:w-[50%] w-[75%] mb-3">
-              <p className="pb-4 italic md:text-[16px] text-[13px] font-[ellams] font-semibold">That beauty lies in imperfection. We believe that every setback, and every challenge we face in life is an opportunity to grow, evolve, and ultimately, to shine.</p>
+                <p className="pb-4 italic md:text-[16px] text-[13px] font-[ellams] font-semibold">
+                  That beauty lies in imperfection. We believe that every
+                  setback, and every challenge we face in life is an opportunity
+                  to grow, evolve, and ultimately, to shine.
+                </p>
               </div>
-          
             </div>
-           
           </div>
         </div>
         <div className="absolute items-center flex justify-center bottom-0 top-0 m-auto  left-0 right-0 ">
           <div className="  bg-darkwind text-white size-[120px] flex items-center  justify-center rounded-[100%]">
-          <Link href="/about"> <p className="discover">About</p></Link> 
+            <Link href="/about">
+              {" "}
+              <p className="discover">About</p>
+            </Link>
           </div>
         </div>
       </div>
 
       <div className="slant md:h-[50vh] h-[30vh] ">
-      <div className="slanted  items-center scrolling-limit  change lg:text-base text-sm text-white bg-[#101010] py-2 lg:py-3">
-        <div className="scrolling">
-          
+        <div className="slanted  items-center scrolling-limit  change lg:text-base text-sm text-white bg-[#101010] py-2 lg:py-3">
+          <div className="scrolling">
             <p>
-            Broken discount Broken discount Broken discount Broken discount
               Broken discount Broken discount Broken discount Broken discount
               Broken discount Broken discount Broken discount Broken discount
               Broken discount Broken discount Broken discount Broken discount
@@ -239,11 +260,10 @@ const Homepage = () => {
               Broken discount Broken discount Broken discount Broken discount
               Broken discount Broken discount Broken discount Broken discount
               Broken discount Broken discount Broken discount Broken discount
- 
+              Broken discount Broken discount Broken discount Broken discount
             </p>
-          
+          </div>
         </div>
-      </div>
       </div>
 
       <div className="py-[80px] space lg:px-[70px] px-3">
@@ -268,9 +288,10 @@ const Homepage = () => {
         <div className="text-end flex flex-col md:justify-end md:items-end md:justify-items-end">
           <div className="md:w-[50%]  text-start">
             <p>
-            Broken , where fashion meets individuality. Explore our exclusive collection of clothing and caps designed to elevate your 
-            style and express your personality.
-             From trendy tops to statement caps, we have everything you need to stand out from the crowd.
+              Broken , where fashion meets individuality. Explore our exclusive
+              collection of clothing and caps designed to elevate your style and
+              express your personality. From trendy tops to statement caps, we
+              have everything you need to stand out from the crowd.
             </p>
           </div>
         </div>

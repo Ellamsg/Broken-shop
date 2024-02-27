@@ -1,15 +1,15 @@
 const Page = () => {
     return (
-      <div className="space py-6">
+      <div className="space py-6 ">
         <div className="md:w-[60%]">
-          <p className="md:text-6xl text-4xl font-semibold">
+          <p className="md:text-6xl  text-4xl font-semibold">
             ABOUT BROKEN SHOP, LAGOS NG
           </p>
         </div>
   
         <div className="flex  md:justify-end  ">
           <div className=" md:w-[35%] ">
-            <p className="py-3 text-3xl font-semibold">About the brand</p>
+            <p className="py-3 text-3xl font-semibold ">About the brand</p>
             Welcome to Broken, your premier destination for stylish and affordable
             clothing located in the vibrant heart of Lagos, Nigeria. At Broken, we
             believe that fashion is not just about what you wear, but how you wear

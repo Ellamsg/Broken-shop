@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: ellams;
-  src: url(/fonts/Kollektif.ttf);
+  src: url(/fonts/Calgary-BoldExtraCondensed.ttf);
 }
 
 
 body {
-  @apply bg-darkwind text-white;
+  @apply bg-darkwind  text-white;
 }
 .space {
   @apply lg:px-[70px] px-3;
