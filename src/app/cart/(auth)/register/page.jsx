@@ -36,7 +36,7 @@ const Register = () => {
 
   return (
     <div className="space ">
-      <div className="flex  flex-col items-center justify-center">
+      <div className="flex pt-4  flex-col items-center justify-center">
         <div className="lg:w-[50%] w-[100%] md:w-[70%]">
           <form className="flex gap-1 flex-col" onSubmit={handleSubmit}>
             <label id="email">User</label>
