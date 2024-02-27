@@ -168,7 +168,7 @@ const Homepage = () => {
         </div>
 
         <div className=" flex items-center">
-          <a href="mailto:Brokenbycoker@gmail.com" target="_blank">
+          <a href="mailto:Brokenbycoker@gmail.com" >
 
           <p>Brokenbtcoker@gmail.com</p>
           </a>
