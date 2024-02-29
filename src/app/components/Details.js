@@ -154,7 +154,7 @@ const settings = {
 
       )}
 
-      <div className="flex flex-col space lg:gap-[30px] lg:flex-row  ">
+      <div className="flex  flex-col space lg:gap-[30px] lg:flex-row  ">
         <h1 className=" leading-tight pb-2 md:hidden block uppercase text-[2rem] md:text-[4rem] ">
           {product?.name}
         </h1>
@@ -218,12 +218,12 @@ const settings = {
         </div>
       
 
-        <div className="lg:w-[50%] flex flex-col gap-4 ">
-          <h1 className="hidden md:block leading-tight uppercase text-[3rem] md:text-[4rem] ">
+        <div className=" flex  justify-center flex-col gap-4 ">
+          <h1 className="hidden md:block leading-tight uppercase text-[3rem] md:text-[3.3rem] ">
             {product?.name}
           </h1>
-          <div className="flex md:flex-row gap-4 flex-col justify-between">
-            <div className="flex gap-3 ">
+          <div className="flex   gap-4 flex-col ">
+            <div className="flex gap-3 lg:w-[50%]">
            
             <button
                 className={`sizes  ${
@@ -266,27 +266,12 @@ const settings = {
                 <p>S</p>
               </button>
             </div>
-            <div className="md:w-[60%] md:order-last order-first md:border-none  pb-3 md:pb-0 w-[100%] md:border-b-2 md:border-white ">
+            <div className=" order-first md:pt-0 pt-3 md:border-none  pb-3 md:pb-0 md:border-b-2 md:border-white ">
               <p>{product?.description}</p>
             </div>
           </div>
 
-          <div className="overflow-x-scroll md:pt-0 pt-4 order-first md:pb-4  ">
-            <div className="details grid grid-cols-4 md:border-b-2 pb-4 md:border-white  md:w-[900px] w-[620px]">
-              <div className="">
-                <p className="">discover</p>
-              </div>
-              <div className=" ">
-                <p className="">discover</p>
-              </div>
-              <div className=" ">
-                <p className="">discover</p>
-              </div>
-              <div className=" ">
-                <p className="">discover</p>
-              </div>
-            </div>
-          </div>
+         
 
           <div className="flex md:flex-row flex-col gap-2 md:gap-4  bg-transparent justify-between">
             <div className="  border-b-2 border-white w-[100%] md:w-[45%]">
