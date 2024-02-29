@@ -48,7 +48,11 @@ body {
 .collections img{
   @apply md:size-[35px] size-[30px] lg:size-[50px]
 }
+.sizes{
 
+  @apply border-[1.5px]   w-[56px] md:w-[66px]
+   text-[9px] md:text-[16px] rounded-[20px]  border-white h-[37px] md:h-[46px]  
+}
 
 /*Heading*/
 div.scrolling-limit {

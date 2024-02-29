@@ -23,6 +23,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",
+    "react-loading-skeleton": "^3.4.0",
     "react-paystack": "^5.0.0",
     "react-player": "^2.14.1",
     "react-slick": "^0.29.0",

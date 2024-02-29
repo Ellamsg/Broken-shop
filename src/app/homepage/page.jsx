@@ -11,6 +11,7 @@ import Slider from "react-slick";
 import Link from "next/link";
 import Trendinglayouts from "../components/trendinglayout";
 
+
 const Homepage = () => {
   const settings = {
     dots: false,
@@ -53,6 +54,7 @@ const Homepage = () => {
   ];
 
   const [products, setProducts] = useState([]);
+   const [loading, setLoading] =useState(true);
 
   //fetch products from sanity
 
@@ -64,7 +66,7 @@ const Homepage = () => {
         const shuffledProducts = fetchedProducts.sort(
           () => Math.random() - 0.5
         );
-        // Take the first 3 products
+       
 
         setProducts(shuffledProducts);
       } catch (error) {
@@ -193,6 +195,7 @@ const Homepage = () => {
           </Link>
         </div>
         {/**featured */}
+        
         <Slider className="!space-x-4 !-m-[5.9px] !gap-3" {...settings}>
           {products.map((product, index) => (
             <Card

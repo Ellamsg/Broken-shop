@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-const Trending = ({ product,imageStyle }) => {
+const Trending = ({ product }) => {
   return (
     <div>
 {/**products */}

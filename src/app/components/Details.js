@@ -224,45 +224,46 @@ const settings = {
           </h1>
           <div className="flex md:flex-row gap-4 flex-col justify-between">
             <div className="flex gap-3 ">
+           
             <button
-                className={`border-2 hover:bg-white hover:text-black border-white size-6   ${
-                  selectedSize === "3XL" ? "bg-green-500" : ""
-                }`}
-                onClick={() => onSizeSelect("3XL")}
-              >
-                3XL
-              </button>
-            <button
-                className={`border-2 hover:bg-white hover:text-black border-white size-6   ${
-                  selectedSize === "2XL" ? "bg-green-500" : ""
+                className={`sizes  ${
+                  selectedSize === "2XL" ? "bg-white text-black" : ""
                 }`}
                 onClick={() => onSizeSelect("2XL")}
               >
-                2XL
+                <p>2XL</p>
               </button>
               <button
-                className={`border-2 hover:bg-white hover:text-black border-white size-6   ${
-                  selectedSize === "XL" ? "bg-green-500" : ""
+                className={`sizes  ${
+                  selectedSize === "XL" ? "bg-white text-black" : ""
                 }`}
                 onClick={() => onSizeSelect("XL")}
               >
-                XL
+                <p>XL</p>
               </button>
               <button
-                className={`border-2 hover:bg-white hover:text-black border-white size-6  ${
-                  selectedSize === "L" ? "bg-green-500" : ""
+                className={`sizes ${
+                  selectedSize === "L" ? "bg-white text-black" : ""
                 }`}
                 onClick={() => onSizeSelect("L")}
               >
-                L
+              <p>L</p>  
               </button>
               <button
-                className={`border-2 hover:bg-white hover:text-black border-white size-6   ${
-                  selectedSize === "S" ? "bg-green-500" : ""
+                className={`sizes ${
+                  selectedSize === "L" ? "bg-white text-black" : ""
+                }`}
+                onClick={() => onSizeSelect("M")}
+              >
+               <p> M</p>
+              </button>
+              <button
+                className={`sizes  ${
+                  selectedSize === "S" ? "bg-white text-black" : ""
                 }`}
                 onClick={() => onSizeSelect("S")}
               >
-                S
+                <p>S</p>
               </button>
             </div>
             <div className="md:w-[60%] md:order-last order-first md:border-none  pb-3 md:pb-0 w-[100%] md:border-b-2 md:border-white ">
@@ -290,7 +291,7 @@ const settings = {
           <div className="flex md:flex-row flex-col gap-2 md:gap-4  bg-transparent justify-between">
             <div className="  border-b-2 border-white w-[100%] md:w-[45%]">
               <input
-                className=" h-[100%] pb-3 mdLpb-0 pt-2 md:pt-0 px-4 w-[100%] bg-transparent  text-white  "
+                className=" h-[100%] pb-3 md:pb-0 pt-2 md:pt-0 px-4 w-[100%] bg-transparent  text-white  "
                 placeholder="select Quantity"
                 id="input"
                 value={quantity}
