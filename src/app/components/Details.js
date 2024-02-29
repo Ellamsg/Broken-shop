@@ -251,7 +251,7 @@ const settings = {
               </button>
               <button
                 className={`sizes ${
-                  selectedSize === "L" ? "bg-white text-black" : ""
+                  selectedSize === "M" ? "bg-white text-black" : ""
                 }`}
                 onClick={() => onSizeSelect("M")}
               >
