@@ -219,7 +219,7 @@ const settings = {
       
 
         <div className=" flex  justify-center flex-col gap-4 ">
-          <h1 className="hidden md:block leading-tight uppercase text-[3rem] md:text-[3.3rem] ">
+          <h1 className="hidden md:block leading-tight uppercase text-[3rem] md:text-[3.9rem] ">
             {product?.name}
           </h1>
           <div className="flex   gap-4 flex-col ">
