@@ -232,7 +232,7 @@ const Homepage = () => {
             />
             <div className="  pt-4 flex items-center justify-items-center flex-col justify-center text-center">
               <div className="md:w-[50%] w-[75%] mb-3">
-                <p className="pb-4 italic md:text-[16px] text-[13px] font-[ellams] font-semibold">
+                <p className="pb-4 italic md:text-[16px] text-[13px] font-semibold">
                   That beauty lies in imperfection. We believe that every
                   setback, and every challenge we face in life is an opportunity
                   to grow, evolve, and ultimately, to shine.
