@@ -64,7 +64,7 @@ export default function Order() {
                     {product.name}
                     </div>
                     <div className=" text-start">
-                      <p>QYT:{product.qty}</p>
+                      <p>QTY:{product.qty}</p>
                     </div>
                     <div className=" text-start">
                       <p>SIZE:{product.sizes}</p>

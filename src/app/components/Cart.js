@@ -60,7 +60,7 @@ const Cart = () => {
                 <div className="uppercase flex flex-col justify-between">
                   <p className="md:text-[16px] text-[10px]">{product.name}</p>{" "}
                   <p className="md:text-[16px] text-[13px]">
-                  Qty:{product.quantity}
+                  QTY:{product.quantity}
                 </p>
                   <p className="md:text-[16px] text-[13px]">SIZE:{product.size}</p>{" "}
                 </div>
