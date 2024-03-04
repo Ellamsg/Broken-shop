@@ -40,11 +40,11 @@ export default function Order() {
       <div className="text-center w-full border-collapse py-2">
         <div className="flex my-3 md:my-6 pb-3 border-b-2 border-white justify-between">
           <div>
-            <p>product</p>
+            <p>Product</p>
           </div>
          
           <div>
-            <p>status</p>
+            <p>Status</p>
           </div>
         </div>
         <div>
