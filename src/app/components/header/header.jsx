@@ -38,6 +38,7 @@ const MOBILE_NAV_ITEMS = [
     navTitle: "Cart",
     link:"/cart"
   },
+
 ];
 
 
@@ -218,8 +219,14 @@ const Header = () => {
               <div className="border-b-2 flex gap-2  border-white">
               <p className="md:text-6xl text-3xl  ">SHOP</p>
            <Link href="/cart">
-           <p className="">CART{totalItems > 0 && <a className="text-white">({totalItems})</a>}</p>
-           </Link>   
+           <p className="md:uppercase underline">Cart{totalItems > 0 && <a className="text-white">({totalItems})</a>}</p>
+           </Link>  
+           <Link href="/shipping">
+           <p className="md:uppercase underline">Shipping & Returns</p>
+           </Link> 
+           <Link href="/privacy">
+           <p className="md:uppercase underline">Privacy Policy</p>
+           </Link>     
               </div>
 
            
