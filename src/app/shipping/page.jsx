@@ -14,7 +14,7 @@ const Page = () => {
 <br/>Sale Items: Items purchased during a sale are non-refundable and cannot be returned.
 <br/>Non-brokenbycoker Purchases: We cannot accept returns for brokenbycoker products that were not purchased directly from our website, www.brokenbycoker.com.
 <br/>Customs and Import Duties: Any customs, import duties, brokerage fees, or taxes incurred during return shipments are the responsibility of the customer.
-<br/>Refused Packages: If you refuse a package, you will be responsible for all costs, duties, fees, or taxes associated with shipping it back to Brokenby Coker.
+<br/>Refused Packages: If you refuse a package, you will be responsible for all costs, duties, fees, or taxes associated with shipping it back to brokenbycoker.
           </div>
         </div>
       </div>

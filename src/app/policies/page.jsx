@@ -24,7 +24,7 @@ We do not collect sensitive information about you except when you specifically k
 
 We do not store your credit card or financial information on our website.
 
-In order to process credit/debit card transactions, the bank or card processing agency may require verifying your personal details for authorization outside of Nigeria. Your information will not be transferred outside Nigeria for any other purpose. If you have any questions about privacy please contact us by email at brokenby@gmail.com
+In order to process credit/debit card transactions, the bank or card processing agency may require verifying your personal details for authorization outside of Nigeria. Your information will not be transferred outside Nigeria for any other purpose. If you have any questions about privacy please contact us by email at brokenbycoker@gmail.com
 
 We create art through fashion, experiences and imagery inspired by Africa’s evolving identity. Lagos based, delivered globally.
           </div>
