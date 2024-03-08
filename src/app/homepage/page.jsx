@@ -170,7 +170,7 @@ const Homepage = () => {
         </div>
 
         <div className=" flex items-center">
-          <a href="mailto:Brokenbycoker@gmail.com" >
+          <a href="mailto:brokenbycoker@gmail.com" >
 
           <p>Brokenbtcoker@gmail.com</p>
           </a>

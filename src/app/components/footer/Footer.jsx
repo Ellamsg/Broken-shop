@@ -19,12 +19,12 @@ const Footer = () => {
         </div>
 
         <div>
-          <Link
-            href="https://www.tiktok.com/@brokenbycoker?_t=8kBa1FEy8tq&_r=1"
+          <a
+            href="mailto:ellamsgeorge7@gmail.com"
             target="_blank"
           >
-            <p> Tiktok</p>
-          </Link>
+            <p> Made by Ellams</p>
+          </a>
         </div>
       </div>
     </div>
