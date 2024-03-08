@@ -19,12 +19,12 @@ const Footer = () => {
         </div>
 
         <div>
-          <a
-            href="https://www.tiktok.com/@brokenbycoker?_t=8kBa1FEy8tq&_r=1"
-            target="_blank"
+          <Link
+            href="/privacy"
+           
           >
-            <p> Tiktok</p>
-          </a>
+            <p> Privacy Policy</p>
+          </Link>
         </div>
       </div>
     </div>
