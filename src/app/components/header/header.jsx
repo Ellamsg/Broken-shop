@@ -224,7 +224,7 @@ const Header = () => {
            <Link  onClick={() => setMobileNavOpen(false)} href="/shipping">
            <p className="md:uppercase  md:text-[16px] text-[10px] underline">Shipping & Returns</p>
            </Link> 
-           <Link  onClick={() => setMobileNavOpen(false)} href="/privacy">
+           <Link  onClick={() => setMobileNavOpen(false)} href="/policies">
            <p className="md:uppercase  md:text-[16px] text-[10px] underline">Privacy Policy</p>
            </Link>     
               </div>
