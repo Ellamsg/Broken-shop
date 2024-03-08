@@ -218,14 +218,14 @@ const Header = () => {
             <div className="">
               <div className="border-b-2 flex gap-2  border-white">
               <p className="md:text-6xl text-3xl  ">SHOP</p>
-           <Link href="/cart">
-           <p className="md:uppercase underline">Cart{totalItems > 0 && <a className="text-white">({totalItems})</a>}</p>
+           <Link  onClick={() => setMobileNavOpen(false)} href="/cart">
+           <p className="md:uppercase md:text-[16px] text-[10px] ">Cart{totalItems > 0 && <a className="text-white">({totalItems})</a>}</p>
            </Link>  
-           <Link href="/shipping">
-           <p className="md:uppercase underline">Shipping & Returns</p>
+           <Link  onClick={() => setMobileNavOpen(false)} href="/shipping">
+           <p className="md:uppercase  md:text-[16px] text-[10px] underline">Shipping & Returns</p>
            </Link> 
-           <Link href="/privacy">
-           <p className="md:uppercase underline">Privacy Policy</p>
+           <Link  onClick={() => setMobileNavOpen(false)} href="/privacy">
+           <p className="md:uppercase  md:text-[16px] text-[10px] underline">Privacy Policy</p>
            </Link>     
               </div>
 
