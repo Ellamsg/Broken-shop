@@ -15,7 +15,7 @@ const Page = () => {
 When you order, we need to know your name, address, and email address. This allows us to process and fulfil your order. You have the option to withhold personal information that is not required for the order process.
 
 We use your personal information for payment and processing of your order purposes.
-
+<p className="py-3">
 We may use your contact details to keep you updated about promotions or offers that we think will be of interest to you.
 
 We follow strict security procedures in the storage and disclosure of information that you have given us, to prevent unauthorized access in accordance with the Nigeria data protection legislation.
@@ -27,6 +27,9 @@ We do not store your credit card or financial information on our website.
 In order to process credit/debit card transactions, the bank or card processing agency may require verifying your personal details for authorization outside of Nigeria. Your information will not be transferred outside Nigeria for any other purpose. If you have any questions about privacy please contact us by email at brokenbycoker@gmail.com
 
 We create art through fashion, experiences and imagery inspired by Africa’s evolving identity. Lagos based, delivered globally.
+</p>
+
+
           </div>
         </div>
       </div>
