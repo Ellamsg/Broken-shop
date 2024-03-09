@@ -63,7 +63,7 @@ const product = {
         type: 'string',
       
         options: {
-          list: ['featured','caps','trending','Top','shortwear','hoodies'],
+          list: ['featured','caps','trending','Top','shortwear','hoodies','Trousers'],
           // You can add more categories as needed.
         },
       },

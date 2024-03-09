@@ -14,6 +14,7 @@ const Productsnav = () => {
                 <Link className="links" href="/allproducts/tshirts"> <p>Top</p></Link>
                 <Link className="links" href="/allproducts/hoodies"> <p>Hoodies</p></Link>
                 <Link className="links" href="/allproducts/caps"> <p>Caps</p></Link>
+                <Link className="links" href="/allproducts/trousers"> <p>Trousers</p></Link>
             </div>
         </div>
      );
