@@ -11,7 +11,7 @@ const Productsnav = () => {
                 <Link className="links" href='/allproducts'> <p>All</p></Link>
                
                 <Link className="links" href="/allproducts/shortwear"><p>Shorts</p></Link>
-                <Link className="links" href="/allproducts/tshirts"> <p>Tshirts</p></Link>
+                <Link className="links" href="/allproducts/tshirts"> <p>Top</p></Link>
                 <Link className="links" href="/allproducts/hoodies"> <p>Hoodies</p></Link>
                 <Link className="links" href="/allproducts/caps"> <p>Caps</p></Link>
             </div>
