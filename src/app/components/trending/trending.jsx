@@ -13,7 +13,7 @@ const Trending = ({ product }) => {
       
       <Link className="" href={`/details/${product?.slug}`}>
         <div className="">
-          <div className="md:h-auto h-[440px] flex flex-col justify-center items-center bg-white">
+          <div className=" flex flex-col justify-center items-center bg-green">
             <img
               src={product?.image2}
               
