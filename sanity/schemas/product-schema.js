@@ -75,6 +75,12 @@ const product = {
         validation: (Rule) => Rule.required().min(0),
       },
       {
+        name: "soldout",
+        title: "Souldout",
+        type: "boolean",
+        validation: (Rule) => Rule.required(),
+      },
+      {
         name: "createdAt",
         title: "Created At",
         type: "datetime",

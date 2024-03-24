@@ -34,6 +34,7 @@ const Details = () => {
                    name,
                     description,
                     price,
+                    soldout,
                     _createdAt,
                     "image":image.asset->url,
                     "image2":image2.asset->url,
@@ -136,22 +137,21 @@ const settings = {
 
   return (
     <div className=" py-4 md:py-6 relative">
-      { pop && (
- <div className="cart-items p-2 right-5 w-[300px]  rounded-[6px] bottom-3 fixed bg-white text-black">
- <p className="text-[16px] pb-1">Item in cart</p>
- <Link href="/cart">
- <button className="border-black text-[12px] border-2 py-[4px] rounded-[15px] px-2">Visit Cart</button>
- </Link>
-</div>
-
+      {pop && (
+        <div className="cart-items p-2 right-5 w-[300px]  rounded-[6px] bottom-3 fixed bg-white text-black">
+          <p className="text-[16px] pb-1">Item in cart</p>
+          <Link href="/cart">
+            <button className="border-black text-[12px] border-2 py-[4px] rounded-[15px] px-2">
+              Visit Cart
+            </button>
+          </Link>
+        </div>
       )}
-     
-     { sizes && (
- <div className="cart-items p-2 right-5 w-[300px]  rounded-[6px] bottom-3 fixed bg-white text-black">
- <p className="text-[16px] pb-2">Please select a size</p>
 
-</div>
-
+      {sizes && (
+        <div className="cart-items p-2 right-5 w-[300px]  rounded-[6px] bottom-3 fixed bg-white text-black">
+          <p className="text-[16px] pb-2">Please select a size</p>
+        </div>
       )}
 
       <div className="flex  flex-col space lg:gap-[30px] lg:flex-row  ">
@@ -159,64 +159,63 @@ const settings = {
           {product?.name}
         </h1>
         <div className="lg:w-[47%] border-2 bg-white ">
-
-      
-        <Slider className=" " {...settings}>
-  <div className="">
-    {isLoadings ? (
-      <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
-    ) : (
-      <div className="  h-[100%] ">
-        {product?.image2 && product?.image2 ? (
-          <img
-            className="object-contain w-[100%] h-[400px] md:h-[600px]"
-            src={product?.image2}
-          />
-        ) : (
-          <p>No image available</p>
-        )}
-      </div>
-    )}
-  </div>
-  <div className="">
-    {isLoadings ? (
-      <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
-    ) : (
-      <div className="  h-[100%] ">
-        {product?.image && product?.image ? (
-          <img
-            className="object-contain w-[100%] h-[400px] md:h-[600px]"
-            src={product?.image}
-          />
-        ) : (
-          <p>No image available</p>
-        )}
-      </div>
-    )}
-  </div>
-  {/* Conditionally render the third slide only if product.image3 exists */}
-  {product?.image3 && product?.image3 && (
-    <div className="">
-      {isLoadings ? (
-        <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
-      ) : (
-        <div className="  h-[100%] ">
-          {product?.image3 && product?.image3 ? (
-            <img
-              className="object-contain w-[100%] h-[400px] md:h-[600px]"
-              src={product?.image3}
-            />
-          ) : (
-            <p>No image available</p>
-          )}
+          <Slider className=" " {...settings}>
+            <div className="">
+              {isLoadings ? (
+                <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
+              ) : (
+                <div className="  h-[100%] ">
+                  {product?.image2 && product?.image2 ? (
+                    <img
+                      className="object-contain w-[100%] h-[400px] md:h-[600px]"
+                      src={product?.image2}
+                    />
+                  ) : (
+                    <p>No image available</p>
+                  )}
+                </div>
+              )}
+            </div>
+            <div className="">
+              {isLoadings ? (
+                <img className="h-[100%] w-[100%] " src="/images/loader.gif" />
+              ) : (
+                <div className="  h-[100%] ">
+                  {product?.image && product?.image ? (
+                    <img
+                      className="object-contain w-[100%] h-[400px] md:h-[600px]"
+                      src={product?.image}
+                    />
+                  ) : (
+                    <p>No image available</p>
+                  )}
+                </div>
+              )}
+            </div>
+            {/* Conditionally render the third slide only if product.image3 exists */}
+            {product?.image3 && product?.image3 && (
+              <div className="">
+                {isLoadings ? (
+                  <img
+                    className="h-[100%] w-[100%] "
+                    src="/images/loader.gif"
+                  />
+                ) : (
+                  <div className="  h-[100%] ">
+                    {product?.image3 && product?.image3 ? (
+                      <img
+                        className="object-contain w-[100%] h-[400px] md:h-[600px]"
+                        src={product?.image3}
+                      />
+                    ) : (
+                      <p>No image available</p>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
+          </Slider>
         </div>
-      )}
-    </div>
-  )}
-</Slider>
-
-        </div>
-      
 
         <div className=" flex  justify-center flex-col gap-4 ">
           <h1 className="hidden md:block leading-tight uppercase text-[3rem] md:text-[3.9rem] ">
@@ -224,8 +223,7 @@ const settings = {
           </h1>
           <div className="flex   gap-4 flex-col ">
             <div className="flex gap-3 lg:w-[50%]">
-           
-            <button
+              <button
                 className={`sizes  ${
                   selectedSize === "2XL" ? "bg-white text-black" : ""
                 }`}
@@ -247,7 +245,7 @@ const settings = {
                 }`}
                 onClick={() => onSizeSelect("L")}
               >
-              <p>L</p>  
+                <p>L</p>
               </button>
               <button
                 className={`sizes ${
@@ -255,7 +253,7 @@ const settings = {
                 }`}
                 onClick={() => onSizeSelect("M")}
               >
-               <p> M</p>
+                <p> M</p>
               </button>
               <button
                 className={`sizes  ${
@@ -270,8 +268,6 @@ const settings = {
               <p>{product?.description}</p>
             </div>
           </div>
-
-         
 
           <div className="flex md:flex-row flex-col gap-2 md:gap-4  bg-transparent justify-between">
             <div className="  border-b-2 border-white w-[100%] md:w-[45%]">
@@ -289,17 +285,22 @@ const settings = {
 
             <div className="flex gap-4 pt-4"></div>
             <div className="text-darkwind text-center lg:w-[55%] bg-white uppercase">
-              <button onClick={onsubmit} className="bg-green-500 p-3">
-              NGN{product && (product.price / 100).toLocaleString()} - ADD TO CART
-              </button>
+            {product.soldout ? (
+    <button className="bg-gray-400 cursor-not-allowed p-3">
+      Sold Out
+    </button>
+  ) : (
+    <button onClick={onsubmit} className="bg-green-500 p-3">
+      NGN{product && (product.price / 100).toLocaleString()} - ADD TO CART
+    </button>
+  )}
             </div>
           </div>
-             <Link href="/allproducts">
-             <button className=" border-2 md:block hidden border-white p-3 w-[100%]">
-            GO BACK TO SHOPPING
-          </button>
-             </Link>
-         
+          <Link href="/allproducts">
+            <button className=" border-2 md:block hidden border-white p-3 w-[100%]">
+              GO BACK TO SHOPPING
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -324,50 +325,43 @@ const settings = {
           </div>
 
           <div className="select pt-5 md:pt-0 ">
-        
             <p className="md:text-end text-start font-semibold md:text-3xl text-[18px] py-2 md:py-6">
               CHECK OUT ALL NEW COLLECTIONS
             </p>
-         
-           
+
             <div className="border-black collections border-t-2">
-              
               <p>CAP/SNAP BACKS</p>
-           
+
               <Link href="/allproducts/caps">
-              <img src="/icons/dark-arrow.png" alt="arrow"/>
+                <img src="/icons/dark-arrow.png" alt="arrow" />
               </Link>
             </div>
             <div className="collections">
-          
               <p>T-SHIRTS</p>
-          
+
               <Link href="/allproducts/tshirts">
-              <img src="/icons/dark-arrow.png" alt="arrow"/>
+                <img src="/icons/dark-arrow.png" alt="arrow" />
               </Link>
             </div>
             <div className="collections">
-   
               <p>SHORTS</p>
-            
+
               <Link href="/allproducts/shortwear">
-              <img src="/icons/dark-arrow.png" alt="arrow"/>
+                <img src="/icons/dark-arrow.png" alt="arrow" />
               </Link>
             </div>
             <div className="collections">
-          
               <p>HOODIES</p>
-             
+
               <Link href="/allproducts/hoodies">
-              <img src="/icons/dark-arrow.png" alt="arrow"/>
+                <img src="/icons/dark-arrow.png" alt="arrow" />
               </Link>
             </div>
             <div className="collections">
-           
               <p>ALL COLLECTIONS</p>
-            
+
               <Link href="/allproducts">
-              <img src="/icons/dark-arrow.png" alt="arrow"/>
+                <img src="/icons/dark-arrow.png" alt="arrow" />
               </Link>
             </div>
           </div>
@@ -378,7 +372,7 @@ const settings = {
         <p>YOU MAY</p>
         <p className="md:text-center ">ALSO LIKE</p>
       </div>
-      <Trendinglayouts/>
+      <Trendinglayouts />
     </div>
   );
 };
