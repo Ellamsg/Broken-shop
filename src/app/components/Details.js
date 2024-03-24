@@ -287,7 +287,7 @@ const settings = {
             <div className="text-darkwind text-center lg:w-[55%] bg-white uppercase">
             {product.soldout ? (
     <button className="bg-gray-400 cursor-not-allowed p-3">
-      Sold Out
+      SOLD OUT!
     </button>
   ) : (
     <button onClick={onsubmit} className="bg-green-500 p-3">
