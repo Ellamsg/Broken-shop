@@ -8,7 +8,7 @@ const config = defineConfig({
   projectId: "llwm1ika",
   dataset: "production",
   title: "artshop",
-  apiVersion: "2023-11-21",
+  apiVersion: "2024-11-21",
   basePath: "/admin",
   plugins: [deskTool()],
     schema:{types:schemas}

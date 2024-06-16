@@ -8,9 +8,7 @@ import Link from "next/link";
 
 const Cart = () => {
   const router = useRouter();
-
   const session = useSession();
-
   const cart = useCartStore((state) => state.cart);
   const cartTotal = useCartStore((state) => state.cartTotal);
   const clearCart = useCartStore((state) => state.clearCart);

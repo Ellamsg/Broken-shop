@@ -285,15 +285,16 @@ const settings = {
 
             <div className="flex gap-4 pt-4"></div>
             <div className="text-darkwind text-center lg:w-[55%] bg-white uppercase">
-            {product.soldout ? (
-    <button className="bg-gray-400 cursor-not-allowed p-3">
-      SOLD OUT!
-    </button>
-  ) : (
-    <button onClick={onsubmit} className="bg-green-500 p-3">
-      NGN{product && (product.price / 100).toLocaleString()} - ADD TO CART
-    </button>
-  )}
+              {product.soldout ? (
+                <button className="bg-gray-400 cursor-not-allowed p-3">
+                  SOLD OUT!
+                </button>
+              ) : (
+                <button onClick={onsubmit} className="bg-green-500 p-3">
+                  NGN{product && (product.price / 100).toLocaleString()} - ADD
+                  TO CART
+                </button>
+              )}
             </div>
           </div>
           <Link href="/allproducts">
