@@ -54,20 +54,19 @@ const Homepage = () => {
   ];
 
   const [products, setProducts] = useState([]);
-   const [loading, setLoading] =useState(true);
+  const [loading, setLoading] =useState(true);
 
   //fetch products from sanity
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const fetchedProducts = await getProducts();
+        const fetchedProducts = await  getCategory("featured");
         // Shuffle the fetched products
         const shuffledProducts = fetchedProducts.sort(
           () => Math.random() - 0.5
         );
        
-
         setProducts(shuffledProducts);
       } catch (error) {
         console.error("Error fetching products:", error);
@@ -181,7 +180,7 @@ const Homepage = () => {
       <section className="lg:px-[70px] px-3">
         <div className="flex items-center text-[11px] md:text-[16px] justify-between border-y-2 border-white py-4">
           <div>
-            <p>FEATURED PRODUCTS</p>
+            <p>NEW ARRIVALS</p>
           </div>
           <Link href="/allproducts">
             <div className="flex justify-center gap-2 md:gap-4 items-center ">
